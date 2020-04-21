@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+/* color palette Black/red
+Chinese black: #111111
+Chinese black 2: #161616
+Eerie black: #1C1C1C
+Lust red: #E31C25
+UE red: #BB000E
+*/
+
 
 *{
     font-family: 'Poiret One', cursive;
 }
 
 body{
-    /* background-image: url(/Images/MainPageBackground.jpg); */
-    background-color: #181614;
+    background-color: #111111;
     overflow-x: hidden;
 }
 
@@ -22,10 +29,6 @@ body{
     background-color: black;
 }
 
-.index-container{
-    margin-bottom: 3000px;
-}
-
 header{
     color:white;
 }
@@ -33,8 +36,9 @@ header{
 
 .introduction {
     position: absolute;
-    top:250px;
-    margin-left:100px;
+    top:20%;
+    margin-left:7%;
+    margin-right:55%;
     color:white;
 }
 
@@ -63,19 +67,29 @@ header{
 }
 
 .nav-link{
+    position: relative;
+    top: 0px;
+
+    width:180px;
+    height:50px;
+    
+    padding: 8px;
+    margin:25px;
     text-decoration: none;
+
     color:white;
-    margin:0 100px 0 0;
-    padding: 7px;
-    border: 1px solid white;
     opacity: 60%;
     border-radius: 20px;
+
+    transition:top 0.5s;
 }
 
 .nav-link:hover {
     opacity: 100%;
     background-color: white;
     color:black;
+    top:20px;
+    height:70px;
 }
 
 
@@ -85,15 +99,20 @@ header{
 .social-media{
     position: absolute;
     top:150px;
+    left:-30px;
     width:50px;
     height:70px;
     align-content: center;
     display: flex;
 }
 
+.social-media li{
+    list-style: none;
+}
+
 .social-media img{
     margin:35px;
-    height: 40px;
+    height: 50px;
     justify-content: flex-start;
     flex-direction: column;
 }
@@ -122,21 +141,21 @@ header{
 }
 
 .contact-me h1{
-    top:180px;
-    font-size: 30px;
+    top:150px;
+    font-size: 60px;
 }
 
 .contact-me p{
-    top:240px;
-    font-size: 20px;
+    top:260px;
+    font-size: 25px;
+    margin-right: 1100px;
 }
-
 
 /*Contact form*/
 .contact-form{
     width:85%;
     max-width: 800px;
-    background: #92817b;
+    background: rgb(102, 0, 5);
     position:absolute;
     top:50%;
     left:78%;
@@ -189,8 +208,9 @@ header{
 /*About me*/
 .about-me {
     position: absolute;
-    top:120px;
-    margin-left:100px;
+    top:20%;
+    margin-left:7%;
+    margin-right:65%;
     color:white;
 }
 
@@ -206,7 +226,9 @@ header{
     position: absolute;
     background-color: white;
     margin:100px;
-    padding:100px;
-    left:500px;
-    top:100px;
+    padding-bottom:400px;
+    padding-right: 200px;
+    left:420px;
+    top:80px;
 }
+/* No CSS *//*# sourceMappingURL=style.css.map */
