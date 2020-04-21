@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+*{
+    font-family: 'Poiret One', cursive;
+}
+
+body{
+    /* background-image: url(/Images/MainPageBackground.jpg); */
+    background-color: #181614;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+.index-container{
+    margin-bottom: 3000px;
+}
+
+header{
+    color:white;
+}
+
+
+.introduction {
+    position: absolute;
+    top:250px;
+    margin-left:100px;
+    color:white;
+}
+
+/*Home*/
+.introduction h1{
+    font-size: 70px;
+}
+
+.introduction p{
+    font-size: 35px;
+}
+
+.logo-container img{
+    top:-10px;
+    height:120px;
+}
+
+.menu ul{
+    position: fixed;
+    top:-10px;
+    right:20px;
+    color:white;
+    display:inline-flex;
+    list-style-type: none;
+    font-size: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:white;
+    margin:0 100px 0 0;
+    padding: 7px;
+    border: 1px solid white;
+    opacity: 60%;
+    border-radius: 20px;
+}
+
+.nav-link:hover {
+    opacity: 100%;
+    background-color: white;
+    color:black;
+}
+
+
+
+
+/*Contact me*/
+.social-media{
+    position: absolute;
+    top:150px;
+    width:50px;
+    height:70px;
+    align-content: center;
+    display: flex;
+}
+
+.social-media img{
+    margin:35px;
+    height: 40px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.social-media img:hover{
+    transform:scale(1.7) translate(30%) rotate(-15deg);
+}
+
+.twitter, .github, .discord, .linkedin{
+    transition: 0.1s linear;
+    cursor:pointer;
+}
+
+.discord h2{
+    display:none;
+}
+
+.discord h2:hover{
+    display:block;
+}
+
+.contact-me h1, .contact-me p{
+    position: absolute;;
+    left:8%;
+    color:white;
+}
+
+.contact-me h1{
+    top:180px;
+    font-size: 30px;
+}
+
+.contact-me p{
+    top:240px;
+    font-size: 20px;
+}
+
+
+/*Contact form*/
+.contact-form{
+    width:85%;
+    max-width: 800px;
+    background: #92817b;
+    position:absolute;
+    top:50%;
+    left:78%;
+    transform:translate(-50%, -50%);
+    padding:30px 40px;
+    box-sizing: border-box;
+    border-radius:8px;
+    text-align: center;
+}
+
+.textbox{
+    border:1px solid #e5ecf3;
+    margin:8px 0;
+    padding:12px 18px;
+    border-radius: 8px;
+}
+
+.textbox label{
+    display:block;
+    text-align: left;
+    color:white;
+    font-size: 18px;
+}
+
+.textbox input, .textbox textarea{
+    width:100%;
+    border:none;
+    background:none;
+    outline: none;
+    font-size: 23px;
+    color:#ece6e6;
+}
+
+.textbox ::placeholder{
+    color:black;
+}
+
+.send{
+    display:inline-block;
+    background:#aca6a6;
+    padding:5px 50px;
+    margin-top: 10px;
+    color:white;
+    cursor:pointer;
+    font-size: 30px;
+    border-radius:30px;
+}
+
+  
+/*About me*/
+.about-me {
+    position: absolute;
+    top:120px;
+    margin-left:100px;
+    color:white;
+}
+
+.about-me h1{
+    font-size: 70px;
+}
+
+.about-me p{
+    font-size: 25px;
+}
+
+.photo{
+    position: absolute;
+    background-color: white;
+    margin:100px;
+    padding:100px;
+    left:500px;
+    top:100px;
+}
