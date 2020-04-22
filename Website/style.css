@@ -74,21 +74,6 @@ UE red: #BB000E
   }
 }
 
-@keyframes jobAnimation {
-  0% {
-    content: 'Web Developer';
-  }
-  33% {
-    content: 'Programmer';
-  }
-  66% {
-    content: 'Game Designer';
-  }
-  100% {
-    content: 'Web Developer';
-  }
-}
-
 .menu ul {
   position: fixed;
   top: -10px;
@@ -126,8 +111,8 @@ UE red: #BB000E
 
 .about-me {
   position: absolute;
-  top: 15%;
-  margin-left: 7%;
+  top:10%;
+  left:7%;
   margin-right: 65%;
   color: white;
 }
@@ -182,17 +167,18 @@ UE red: #BB000E
 
 .contact-me h1, .contact-me p {
   position: absolute;
-  left: 8%;
   color: white;
 }
 
 .contact-me h1 {
-  top: 15%;
+  top:10%;
+  left:7%;
   font-size: 70px;
 }
 
 .contact-me p {
-  top: 28%;
+  top:25%;
+  left:7%;
   font-size: 25px;
   margin-right: 1100px;
 }
@@ -321,6 +307,34 @@ header {
 .logo-container img {
   top: -10px;
   height: 120px;
+}
+
+.projects h1{
+  color:white;
+  font-size: 70px;
+  position: absolute;
+  top:10%;
+  left:7%;
+}
+
+.out-of-the-shadows{
+  position: absolute;
+  top:30%;
+  left:50%;
+}
+
+.placeholder{
+  display:block;
+  position: absolute;
+  top:30%;
+  left:5%;
+  padding: 432px 350px 100px;
+  background-color: grey;
+}
+
+.placeholder h2{
+  position:relative;
+  top:-160px;
 }
 
 /* No CSS */

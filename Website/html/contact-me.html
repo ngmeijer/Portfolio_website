@@ -30,17 +30,21 @@
             <p>Would you like to contact me? Fill out the form to the right, or reach out using social media.</p>
             <div class="social-media">
                 <ul>
-                    <a href="https://twitter.com/NilsGMeijer">
+                    <a href="https://twitter.com/NilsGMeijer" target="_blank">
                         <li> <img class="twitter" src="../Images/twitter.png" alt="twitter"> </li>
                     </a>
 
-                    <a href="https://github.com/ngmeijer">
+                    <a href="https://github.com/ngmeijer" target="_blank">
                         <li> <img class="github" src="../Images/github.png" alt="github"> </li>
                     </a>
 
-                    <li> <img class="discord" src="../Images/discord.png" alt="discord"> </li>
+                    <div class="discord-container">
+                        <li> <img class="discord" src="../Images/discord.png" alt="discord">
+                        </li>
+                        <!-- <h2>ActOfRagex#4817</h2> -->
+                    </div>
 
-                    <a href="https://www.linkedin.com/in/nils-meijer-2a26611a6/">
+                    <a href="https://www.linkedin.com/in/nils-meijer-2a26611a6/" target="_blank">
                         <li> <img class="linkedin" src="../Images/linkedin.png" alt="linkedin"> </li>
                     </a>
                 </ul>
@@ -50,12 +54,12 @@
         <form class="contact-form" action="contact-form.php" method="post">
             <div class="textbox">
                 <label>Full name: </label>
-                <input type="text" name="name" placeholder="Full name">
+                <input type="text" name="name" placeholder="Full name" required>
             </div>
 
             <div class="textbox">
                 <label>Email address: </label>
-                <input type="text" name="email" placeholder="Your email address">
+                <input type="text" name="email" placeholder="Your email address" required>
             </div>
 
             <div class="textbox">
@@ -65,12 +69,12 @@
 
             <div class="textbox">
                 <label>Subject: </label>
-                <input type="text" name="subject" placeholder="Enter the subject">
+                <input type="text" name="subject" placeholder="Enter the subject" required>
             </div>
 
             <div class="textbox">
                 <label>Message: </label>
-                <textarea placeholder="Message"></textarea>
+                <textarea name="message" placeholder="Message" required></textarea>
             </div>
             <button class="send" type="submit" name="submit">Send message</button>
         </form>
