@@ -138,7 +138,7 @@ UE red: #BB000E
 .social-media {
   position: absolute;
   top: 160px;
-  left: -40px;
+  left: -50px;
 }
 
 .social-media li {
@@ -159,10 +159,54 @@ UE red: #BB000E
           transform: scale(1.4) translate(30%) rotate(-15deg);
 }
 
+#discord img:hover{
+  transform: scale(1.4) translate(30%) rotate(-15deg);
+}
+
+#discord img{
+  transition: 0.1s linear;
+}
+
 .twitter, .github, .discord, .linkedin {
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
   cursor: pointer;
+}
+
+.linkedin{
+  position: relative;
+  top:95px;
+}
+
+#discord{
+  position:relative;
+  width:50px;
+  height:50px;
+  left:35px;
+  top:40px;
+}
+
+.hover{
+  position: relative;
+  top:-35px;
+  left:-35px;
+}
+
+#discord .text {
+  position:relative;
+  color:white;
+  left:100px; top:-145px;
+  visibility:hidden;
+  }
+  
+  #discord:hover .text {
+     visibility:visible;
+  }
+  
+
+.out-of-the-shadows-image:hover + .game {
+  top:100px;
+  display:block;
 }
 
 .contact-me h1, .contact-me p {
@@ -317,25 +361,34 @@ header {
   left:7%;
 }
 
-.out-of-the-shadows{
+.out-of-the-shadows-image {
   position: absolute;
-  top:30%;
-  left:50%;
+  top:10%;
+  left:-10%;
+  transform:scale(0.5);
 }
 
-.placeholder{
+.game {
+  display:none;
+  position: relative;
+  top:200%;
+  left:0%;
+}
+
+.out-of-the-shadows-image:hover + .game {
+  top:100px;
   display:block;
-  position: absolute;
-  top:30%;
-  left:5%;
-  padding: 432px 350px 100px;
-  background-color: grey;
 }
 
-.placeholder h2{
-  position:relative;
-  top:-160px;
+.out-of-the-shadows iframe{
+  height:100%;
+  width:100%;
 }
+
+/* .placeholder iframe{
+  height:100%;
+  width:100%;
+} */
 
 /* No CSS */
 /*# sourceMappingURL=style.css.map */
