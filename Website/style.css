@@ -6,6 +6,21 @@ Eerie black: #1C1C1C
 Lust red: #E31C25
 UE red: #BB000E
 */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #302121;
+  background-image: url("");
+  background-repeat: repeat;
+  margin-left:-15px;
+  margin-top:-15px;
+  padding-right: 10px;
+  padding-bottom:5px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 .introduction {
   position: absolute;
   top: 15%;
@@ -336,7 +351,7 @@ UE red: #BB000E
 }
 
 body {
-  background-color: #111111;
+  background-color:#302121;
   overflow-x: hidden;
   -webkit-animation: pageTransition 0.75s;
           animation: pageTransition 0.75s;
@@ -381,7 +396,9 @@ header {
 }
 
 .logo-container img {
-  top: -10px;
+  position: absolute;
+  z-index: 1;
+  top:0px;
   height: 120px;
 }
 
