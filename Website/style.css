@@ -59,7 +59,7 @@ UE red: #BB000E
           animation: jobAnimation infinite 8s;
 }
 
-@-webkit-keyframes jobAnimation {
+@keyframes jobAnimation {
   0% {
     content: 'Web Developer';
   }
@@ -73,7 +73,6 @@ UE red: #BB000E
     content: 'Web Developer';
   }
 }
-
 .menu ul {
   position: fixed;
   top: -10px;
@@ -86,6 +85,42 @@ UE red: #BB000E
   font-size: 30px;
 }
 
+.menu ul{
+  position: fixed;
+  top:-10px;
+  right:20px;
+  color:white;
+  display:inline-flex;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.nav-link{
+  position: relative;
+  top: 0px;
+
+  width:180px;
+  height:50px;
+  
+  padding: 8px;
+  margin:25px;
+  text-decoration: none;
+
+  color:white;
+  opacity: 60%;
+  border-radius: 40px;
+
+  transition:top 0.5s, background-color 0.5s;
+
+}
+
+.nav-link:hover{
+    opacity: 100%;
+    background-color: white;
+    color:black;
+    top:20px;
+    height:70px;  
+}
 .nav-link {
   position: relative;
   top: 0px;
@@ -113,7 +148,7 @@ UE red: #BB000E
   position: absolute;
   top:10%;
   left:7%;
-  margin-right: 65%;
+  margin-right: 67%;
   color: white;
 }
 
@@ -123,6 +158,31 @@ UE red: #BB000E
 
 .about-me p {
   font-size: 25px;
+}
+
+.about-me a{
+  position: relative;
+  font-size: 27px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  color:red;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100% 1px; 
+}
+
+.about-me a:hover{
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+}
+
+.about-me a {
+  transition: background-size .2s, background-position .5s ease-in .1s;
+}
+.about-me a:hover {
+  transition: background-position .2s, background-size .5s ease-in .1s;
 }
 
 .photo {
@@ -173,37 +233,6 @@ UE red: #BB000E
   cursor: pointer;
 }
 
-.linkedin{
-  position: relative;
-  top:95px;
-}
-
-#discord{
-  position:relative;
-  width:50px;
-  height:50px;
-  left:35px;
-  top:40px;
-}
-
-.hover{
-  position: relative;
-  top:-35px;
-  left:-35px;
-}
-
-#discord .text {
-  position:relative;
-  color:white;
-  left:100px; top:-145px;
-  visibility:hidden;
-  }
-  
-  #discord:hover .text {
-     visibility:visible;
-  }
-  
-
 .out-of-the-shadows-image:hover + .game {
   top:100px;
   display:block;
@@ -231,7 +260,6 @@ UE red: #BB000E
 .contact-form {
   width: 85%;
   max-width: 800px;
-  background: #660005;
   position: absolute;
   top: 50%;
   left: 78%;
@@ -333,15 +361,19 @@ body {
 }
 
 ::-webkit-scrollbar {
-  background-color: black;
+  background-color: white;
 }
 
-::-webkit-scrollbar ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-button{
   background-color: grey;
 }
 
-::-webkit-scrollbar ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: grey;
 }
 
 header {
@@ -353,42 +385,48 @@ header {
   height: 120px;
 }
 
-.projects h1{
+.project-container{
+  margin-bottom: 1800px;
+}
+
+.projects h1:nth-child(1){
+  color:white;
+  font-size: 70px;
+  position: absolute;
+  top:10%; 
+  left:34%;
+}
+
+.project-container h1:nth-child(2){
   color:white;
   font-size: 70px;
   position: absolute;
   top:10%;
-  left:7%;
+  left:55%;
 }
 
-.out-of-the-shadows-image {
+iframe{
   position: absolute;
-  top:10%;
-  left:-10%;
-  transform:scale(0.5);
-}
-
-.game {
-  display:none;
-  position: relative;
-  top:200%;
-  left:0%;
-}
-
-.out-of-the-shadows-image:hover + .game {
-  top:100px;
-  display:block;
+  width:47%;
+  height:47%;
 }
 
 .out-of-the-shadows iframe{
-  height:100%;
-  width:100%;
+  top:30%;
+  left:2%;
 }
 
-/* .placeholder iframe{
-  height:100%;
-  width:100%;
-} */
+.leonard iframe{
+  top:85%;
+  left:54%;
+}
 
-/* No CSS */
-/*# sourceMappingURL=style.css.map */
+.ahpuch iframe{
+  top:30%;
+  left:54%;
+}
+
+.frogger iframe{
+  top:140%;
+  left:54%;
+}

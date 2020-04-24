@@ -24,33 +24,6 @@
     cursor:pointer;
 }
 
-#discord{
-    position:relative;
-    width:50px;
-    height:50px;
-    left:35px;
-    top:40px;
-  }
-  
-  .hover{
-    position: relative;
-    top:-35px;
-    left:-35px;
-  }
-  
-  #discord .text {
-    position:relative;
-    color:white;
-    left:100px; top:-145px;
-    visibility:hidden;
-    }
-    
-    #discord:hover .text {
-       visibility:visible;
-    }
-    
-  
-
 .discord-container h2{
     color:white;
 }
