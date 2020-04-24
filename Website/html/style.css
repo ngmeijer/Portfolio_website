@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
+/* color palette Black/red
+Chinese black: #111111
+Chinese black 2: #161616
+Eerie black: #1C1C1C
+Lust red: #E31C25
+UE red: #BB000E
+*/
+* {
+  font-family: 'Poiret One', cursive;
+}
+
+.introduction {
+  position: absolute;
+  top:7vw;
+  margin-left: 7vw;
+  margin-right: 35vw;
+  color: rgb(255, 255, 255);
+}
+
+.introduction h1 {
+  font-size: 6vw;
+}
+
+.introduction h2 {
+  font-size: 4vw;
+  text-shadow: 0 0.1vw 0 rgba(255, 0, 0, 0.8);
+}
+
+.introduction .contact-button {
+  position: relative;
+  top: 0vh;
+  left: -0.5vw;
+  font-size: 3vw;
+  width: 4vw;
+  height: 2vh;
+  padding: 0.3vw;
+  text-decoration: none;
+  color: white;
+  opacity: 60%;
+  border-radius: 4vw;
+  -webkit-transition: left 0.5s, background-color 0.5s;
+  transition: left 0.5s, background-color 0.5s;
+}
+
+.introduction .contact-button:hover {
+  opacity: 100%;
+  background-color: white;
+  color: black;
+  left: 3vw;
+}
+
+.introduction span {
+  position: relative;
+  top: 0vh;
+  font-size: 4vw;
+}
+
+.introduction span:before {
+  content: '';
+  -webkit-animation: jobAnimation infinite 8s;
+          animation: jobAnimation infinite 8s;
+}
+
+@keyframes jobAnimation {
+  0% {
+    content: 'Web Developer';
+  }
+  33% {
+    content: 'Programmer';
+  }
+  66% {
+    content: 'Game Designer';
+  }
+  100% {
+    content: 'Web Developer';
+  }
+}
+
+.menu ul{
+  z-index: 1000;
+  position: fixed;
+  top:2vh;
+  right:20px;
+  color:white;
+  display:inline-flex;
+  list-style-type: none;
+  font-size: 2vw;
+}
+
+.nav-link {
+  position: relative;
+  top: 0vw;
+  padding: 0.5vw;
+  margin: 3vw;
+  text-decoration: none;
+  color: white;
+  opacity: 60%;
+  border-radius: 2vw;
+  -webkit-transition: top 0.5s, background-color 0.5s;
+  transition: top 0.5s, background-color 0.5s;
+}
+
+.nav-link:hover {
+  opacity: 100%;
+  background-color: white;
+  color: black;
+  top: 1vw;
+}
+
+.about-me {
+  position: absolute;
+  top:7vw;
+  left:8vw;
+  margin-right: 73vw;
+  color: white;
+}
+
+.about-me h1 {
+  font-size: 4vw;
+}
+
+.about-me p {
+  font-size: 1.4vw;
+}
+
+.about-me a{
+  position: relative;
+  font-size: 1.5vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  text-decoration: none;
+  color:red;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100% 0.05vw; 
+}
+
+.about-me a:hover{
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+}
+
+.about-me a {
+  transition: background-size .2s, background-position .5s ease-in .1s;
+}
+.about-me a:hover {
+  transition: background-position .2s, background-size .5s ease-in .1s;
+}
+
+.photo {
+  position: absolute;
+  background-color: white;
+  color:black;
+  font-size: 2vw;
+  margin: 5vw;
+  padding-bottom: 20vw;
+  padding-right: 12vw;
+  left: 18vw;
+  top: 5vw;
+}
+
+.social-media {
+  position: absolute;
+  top: 12vw;
+  left: -2.5vw;
+}
+
+.social-media li {
+  list-style: none;
+}
+
+.social-media img {
+  margin: 1.5vw;
+  height: 3vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social-media.social-media img:hover {
+  -webkit-transform: scale(1.4) translate(30%) rotate(-15deg);
+          transform: scale(1.4) translate(30%) rotate(-15deg);
+}
+
+#discord img:hover{
+  transform: scale(1.4) translate(30%) rotate(-15deg);
+}
+
+#discord img{
+  transition: 0.1s linear;
+}
+
+.twitter, .github, .discord, .linkedin {
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+
+.contact-me h1, .contact-me p {
+  position: absolute;
+  color: white;
+}
+
+.contact-me h1 {
+  top:7vw;
+  left:6.7vw;
+  font-size: 3.5vw;
+}
+
+.contact-me p {
+  top:13vw;
+  left:7vw;
+  font-size: 1.5vw;
+  margin-right: 50vw;
+}
+
+/*Contact form*/
+.contact-form {
+  width: 40vw;
+  max-width: 45vw;
+  position: absolute;
+  top: 29vw;
+  left: 78vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.textbox {
+  border: 0.026vw solid #ffffff;
+  margin: 1.5vw 0;
+  padding: 1vw 1.5vw;
+  border-radius: 5vw;
+}
+
+.textbox label {
+  display: block;
+  text-align: left;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.textbox input, .textbox textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1vw;
+  color: #ece6e6;
+}
+
+.textbox.textbox ::-webkit-input-placeholder {
+  color: white;
+  font-size: 1vw;
+}
+
+.textbox.textbox :-ms-input-placeholder {
+  color: white;
+  font-size: 1vw;
+}
+
+.textbox.textbox ::-ms-input-placeholder {
+  color: white;
+  font-size: 1vw;
+}
+
+.textbox.textbox ::placeholder {
+  color: white;
+  font-size: 1vw;
+}
+
+.send {
+  display: inline-block;
+  background: #aca6a6;
+  padding: 1vw 3vw;
+  margin-top: 0.5vw;
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+  border-radius: 3vw;
+}
+
+.send:hover {
+  background-color: #BB000E;
+  color: white;
+}
+
+body {
+  background-color: #111111;
+  overflow-x: hidden;
+  -webkit-animation: pageTransition 0.75s;
+          animation: pageTransition 0.75s;
+}
+
+@-webkit-keyframes pageTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pageTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: white;
+}
+
+::-webkit-scrollbar-button{
+  background-color: grey;
+}
+
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: grey;
+}
+
+header {
+  color: white;
+}
+
+.logo-container img {
+  height: 15vh;
+}
+
+.project-container{
+  margin-bottom: 90vh;
+}
+
+.project-container{
+  color:white;
+  font-size: 2vw;
+}
+
+.projects h1:nth-child(1){
+  position: absolute;
+  top:12vh; 
+  right:49vw;
+}
+
+.project-container h1:nth-child(2){
+  position: absolute;
+  top:12vh;
+  left:53.5vw;
+}
+
+.out-of-the-shadows iframe, .leonard iframe, .ahpuch iframe, .frogger iframe{
+  position: absolute;
+  width:46vw;
+  height:46vh;
+}
+
+.out-of-the-shadows iframe{
+  top:32vh;
+  left:4vw;
+}
+
+.ahpuch iframe{
+  top:32vh;
+  left:53.5vw;
+}
+
+.leonard iframe{
+  top:85vh;
+  left:53.5vw;
+}
+
+.frogger iframe{
+  top:138vh;
+  left:53.5vw;
+}

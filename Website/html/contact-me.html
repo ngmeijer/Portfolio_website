@@ -4,46 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Nils Meijer | Contact me</title>
 </head>
 
 <body>
     <header>
         <div class="logo-container">
-            <img src="../Images/logo.png" alt="logo">
+            <img src="logo.png">
         </div>
     </header>
 
-    <nav class="menu">
-        <ul>
-            <li><a class="nav-link" href="index.html"> Home</a> </li>
-            <li><a class="nav-link" href="portfolio.html"> Portfolio</a> </li>
-            <li><a class="nav-link" href="about-me.html"> About</a> </li>
-            <li><a class="nav-link" href="contact-me.html"> Contact me</a> </li>
-        </ul>
-    </nav>
-
+    
     <main>
+        <nav class="menu">
+            <ul>
+                <li><a class="nav-link" href="index.html"> Home</a> </li>
+                <li><a class="nav-link" href="portfolio.html"> Portfolio</a> </li>
+                <li><a class="nav-link" href="about-me.html"> About</a> </li>
+                <li><a class="nav-link" href="contact-me.html"> Contact me</a> </li>
+            </ul>
+        </nav>
         <div class="contact-me">
             <h1>Contact me</h1>
             <p>Would you like to contact me? Fill out the form to the right, or reach out using social media.</p>
             <div class="social-media">
                 <ul>
                     <a href="https://twitter.com/NilsGMeijer" target="_blank">
-                        <li> <img class="twitter" src="../Images/twitter.png" alt="twitter"> </li>
+                        <li> <img class="twitter" src="twitter.png" alt="twitter"> </li>
                     </a>
 
                     <a href="https://github.com/ngmeijer" target="_blank">
-                        <li> <img class="github" src="../Images/github.png" alt="github"> </li>
+                        <li> <img class="github" src="github.png" alt="github"> </li>
                     </a>
 
                     <div id="discord">
-                        <img src="../Images/discord.png" class="hover" />
+                        <img src="discord.png" class="hover" />
                     </div>
 
                     <a href="https://www.linkedin.com/in/nils-meijer-2a26611a6/" target="_blank">
-                        <li> <img class="linkedin" src="../Images/linkedin.png" alt="linkedin"> </li>
+                        <li> <img class="linkedin" src="linkedin.png" alt="linkedin"> </li>
                     </a>
                 </ul>
             </div>
@@ -52,27 +52,27 @@
         <form class="contact-form" action="contact-form.php" method="post">
             <div class="textbox">
                 <label>Full name: </label>
-                <input type="text" name="name" placeholder="Full name" required>
+                <input type="text" name="name" placeholder="" required>
             </div>
 
             <div class="textbox">
                 <label>Email address: </label>
-                <input type="text" name="email" placeholder="Your email address" required>
+                <input type="text" name="email" placeholder="" required>
             </div>
 
             <div class="textbox">
                 <label>Phone number: </label>
-                <input type="text" name="phone" placeholder="Your phone number">
+                <input type="text" name="phone" placeholder="">
             </div>
 
             <div class="textbox">
                 <label>Subject: </label>
-                <input type="text" name="subject" placeholder="Enter the subject" required>
+                <input type="text" name="subject" placeholder="" required>
             </div>
 
             <div class="textbox">
                 <label>Message: </label>
-                <textarea name="message" placeholder="Message" required></textarea>
+                <textarea name="message" placeholder="" required></textarea>
             </div>
             <button class="send" type="submit" name="submit">Send message</button>
         </form>
