@@ -8,15 +8,6 @@ UE red: #BB000E
 */
 * {
   font-family: 'Poiret One', cursive;
-  box-sizing: border-box;
-}
-
-#canvas1{
-  position: absolute;
-  top: 0; left: 0;
-  width:100%;
-  height:100%;
-  background:radial-gradient(#ffc38c, #ff9b40);
 }
 
 .introduction {
@@ -300,7 +291,7 @@ UE red: #BB000E
 }
 
 body {
-  /* background-color: #111111; */
+  background-color: #111111;
   overflow-x: hidden;
   -webkit-animation: pageTransition 0.75s;
           animation: pageTransition 0.75s;
@@ -342,11 +333,6 @@ body {
 
 header {
   color: white;
-}
-
-.logo-container-index{
-  position: absolute;
-  top:0vh;
 }
 
 .logo-container img {
