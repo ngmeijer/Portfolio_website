@@ -33,7 +33,7 @@ function drawLight() {
 }
 
 function Box() {
-    this.half_size = Math.floor((Math.random() * 10) + 1);
+    this.half_size = Math.floor((Math.random() * 50) + 1);
     this.x = Math.floor((Math.random() * c.width) + 1);
     this.y = Math.floor((Math.random() * c.height) + 1);
     this.r = Math.random() * Math.PI;
