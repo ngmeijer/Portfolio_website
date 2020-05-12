@@ -13,11 +13,19 @@ UE red: #BB000E
 }
 
 body, html{
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #2c343f;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
 }
 
 .index-container, .contact-me, .about-me{
+  cursor: none;
   overflow: hidden;
   margin-bottom: -22vh;
 }
@@ -109,28 +117,8 @@ body, html{
     content: 'Web Developer';
   }
 }
-
-html {
-  height: 100%;
-}
-
-.index-container, .contact-me, .about-me{
-  cursor: none;
-}
-
-body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #2c343f;
-}
-
-#canvas {
-  width: 100%;
-  height: 100%;
-}
-
-#projects h1{
+/* ////// */
+#game-projects h1{
   position: relative;
   top:5vh;
   text-align: center;
@@ -178,6 +166,8 @@ body{
   background-position:center;
   background-attachment: fixed;
 }
+/* /////// */
+
 
 .about-me h1{
   position: absolute;
@@ -196,56 +186,21 @@ body{
 
 .photo img{
   position: absolute;
-  left:32.5vw;
-  top:20vh;
-  padding:300px 0px 150px 100px;
-  background: white;
-}
-
-.contact-form{
-  display:flex;
-  position: absolute;
-  color:black;
-  top:10%;
-  left:40%;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-form input, .contact-form textarea, .contact-form button{
-  max-width: 20vw;
-  width:100%;
-  color:black;
-  background-color: transparent;
-  margin-bottom: 10px;
-}
-
-.contact-form button{
-  width:102%;
-  color:white;
-  font-size: 3vh;
-}
-
-.contact-form h1{
-  font-size: 3vw;
-  text-align:center;
-}
-
-.contact-form label{
-  font-size: 1.5vw;
+  width:20%;
+  top:10vh;
+  left:30vw;
+  transform: scale(0.7);
+  margin-bottom: -0.8vh;
 }
 
 .social-media{
-  position: absolute;
-  top:70vh;
-  display: flex;
-  flex-direction: row;
+  display:flex;
+  justify-content: center;
+  position: relative;
+  top:-250px;
 }
 
-.social-media a{
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  background: black;
-  margin-right:5vw;
+.social-media div{
+  margin-left:2vw;
+  margin-right:2vw;
 }
