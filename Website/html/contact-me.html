@@ -49,41 +49,41 @@
                 </div>
 
                 <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/nils-meijer-2a26611a6/"">
-                            <img class=" linkedin" src="linkedin.png" alt="linkedin">
+                    <a href="https://www.linkedin.com/in/nils-meijer-2a26611a6/">
+                        <img class=" linkedin" src="linkedin.png" alt="linkedin">
                     </a>
                 </div>
             </nav>
     </div>
 
-    <div class="wrapper">
-        <form class="contact-form" action="contact-form.php" method="post"></form>
-        <h1>Get in touch</h1>
-        <div class="textbox">
-            <label>Full name: </label>
-            <input type="text" name="name" placeholder="" required>
-        </div>
+    <div class="cf-container">
+        <form class="contact-form" action="contact-form.php" method="post">
+            <h1>Get in touch</h1>
+            <div class="input-container">
+                <label>Your name: </label>
+                <input type="text" class="cf-text" name="name" placeholder="" required>
+            </div>
 
-        <div class="textbox">
-            <label>Email address: </label>
-            <input type="text" name="email" placeholder="" required>
-        </div>
+            <div class="input-container">
+                <label>Email: </label>
+                <input type="text" class="cf-text" name="email" placeholder="" required>
+            </div>
 
-        <div class="textbox">
-            <label>Phone number: </label>
-            <input type="text" name="phone" placeholder="">
-        </div>
+            <div class="input-container">
+                <label>Phone number (optional): </label>
+                <input type="text" class="cf-text" name="phone" placeholder="">
+            </div>
 
-        <div class="textbox">
-            <label>Subject: </label>
-            <input type="text" name="subject" placeholder="" required>
-        </div>
+            <div class="input-container">
+                <label>Subject: </label>
+                <input type="text" class="cf-text" name="subject" placeholder="" required>
+            </div>
 
-        <div class="textbox">
-            <label>Message: </label>
-            <textarea name="message" placeholder="" required></textarea>
-        </div>
-        <button class="send" type="submit" name="submit">Send message</button>
+            <div class="input-container">
+                <label>Message: </label>
+                <textarea class="cf-text" name="message" placeholder="" required></textarea>
+            </div>
+            <button class="cf-button" type="submit" name="submit">Send message</button>
         </form>
     </div>
     </main>
