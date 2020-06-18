@@ -136,9 +136,25 @@ body, html
 #game-projects h1
 {
   position: relative;
-  top:5vh;
+  top:3vh;
   text-align: center;
   font-size: 5vh;
+}
+
+.the-last-light
+{
+  display:table;
+  height:80vh;
+  width:100%;
+  background-image: url("Images/out-of-the-shadows.png");
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+}
+
+.the-last-light-webgl{
+  display:block;
+  margin:auto;
 }
 
 .out-of-the-shadows
