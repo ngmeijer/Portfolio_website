@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="GamePopup.js"></script>
     <title>Nils Meijer | Portfolio</title>
 </head>
 
@@ -26,12 +27,19 @@
         </nav>
 
         <div id="game-projects">
-            <div class="the-last-light">
-                <h1>The Last Light</h1>
-                <iframe class="the-last-light-webgl" src="https://i.simmer.io/@NilsMeijer/the-last-light-wip" 
-                style="width:1440px;height:900px;border:0"></iframe>
+            <div class="the-last-light"></div>
+            <button data-modal-target="#modal" id="gameButton">Play "The Last Light"</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://i.simmer.io/@NilsMeijer/the-last-light-wip"
+                        style="width:1248px;height:780px;border:0"></iframe>
+                </div>
             </div>
-            
+            <div id="overlay"></div>
+
             <div class="out-of-the-shadows">
                 <h1>Out of the Shadows</h1>
             </div>

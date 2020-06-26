@@ -133,6 +133,10 @@ body, html
   }
 }
 /* ////// */
+.project-container body{
+  background-color: #5cd3ad;
+}
+
 #game-projects h1
 {
   position: relative;
@@ -146,15 +150,88 @@ body, html
   display:table;
   height:80vh;
   width:100%;
-  background-image: url("Images/out-of-the-shadows.png");
+  background-image: url("Images/TheLastLight.png");
   background-size: cover;
   background-position:center;
   background-attachment: fixed;
 }
 
-.the-last-light-webgl{
-  display:block;
-  margin:auto;
+.modal {
+  position: fixed;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: transparent;
+  width: 1248px;
+  max-width: 80%;
+  height:1000px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#gameButton{
+  display:inline-block;
+  position: absolute;
+  top:70vh;
+  left:50%;
+  transform:translate(-50%);
+  width:400px;
+  height:8vh;
+  background-color: transparent;
+  border:none;
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+#gameButton:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 20px 10px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .out-of-the-shadows
