@@ -102,6 +102,21 @@ body, html
   font-size: 3.8vw;
 }
 
+.portfolioButton{
+  position: relative;
+  display:flex;  
+  width:20vw;
+  justify-content: center;
+  border-radius: 20px;
+  top:-30vh;
+  font-size: 5vh;
+  text-decoration: none;
+}
+
+.portfolioButton:hover{
+  background-color: rgba(0,0,0,0.3);
+}
+
 .introduction span
 {
   position: absolute;
@@ -133,23 +148,18 @@ body, html
   }
 }
 /* ////// */
-#game-projects h1
-{
-  position: relative;
-  top:3vh;
+
+.the-last-light h1{
+  position:relative;
   text-align: center;
   font-size: 5vh;
 }
 
-.the-last-light
-{
-  display:table;
-  height:80vh;
-  width:100%;
-  background-image: url("Images/out-of-the-shadows.png");
+.the-last-light{
   background-size: cover;
-  background-position:center;
-  background-attachment: fixed;
+  background-position: center;
+  position: absolute;
+  top:10vh;
 }
 
 .the-last-light-webgl{
@@ -159,49 +169,73 @@ body, html
 
 .out-of-the-shadows
 {
+  position: absolute;
+  top:10vh;
+  left:50%;
   display:table;
-  height:80vh;
-  width:100%;
+  height:70vh;
+  width:50%;
   background-image: url("Images/out-of-the-shadows.png");
-  background-size: cover;
-  background-position:center;
-  background-attachment: fixed;
 }
 
-.ahpuch
-{
+.the-last-light:hover{
+  background-color: rgba(0,0,0,0.3);
+}
+
+.ahpuch h1{
+  position:relative;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.ahpuch{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:80vh;
+  left:50%;
   display:table;
-  height:80vh;
-  width:100%;
-  opacity: 100%;
+  height:70vh;
+  width:50%;
   background-image: url("Images/ahpuch.png");
-  background-size: cover;
-  background-position:center;
-  background-attachment: fixed;
 }
 
-.frogger
-{
-  display:table;
-  height:80vh;
-  width:100%;
-  background-image: url("Images/frogger.png");
-  background-position-y: 200px;
-  background-size: cover;
-  background-position:center;
-  background-attachment: fixed;
+.leonard h1{
+  position:relative;
+  text-align: center;
+  font-size: 5vh;
 }
 
-.leonard
-{
+.leonard{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:80vh;
   display:table;
-  height:80vh;
-  width:100%;
+  height:70vh;
+  width:50%;
   background-image: url("Images/leonard.png");
-  background-size: cover;
-  background-position:center;
-  background-attachment: fixed;
 }
+
+.frogger h1{
+  position:relative;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.frogger{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:150vh;
+  left:25%;
+  display:table;
+  height:125vh;
+  width:50%;
+  background-image: url("Images/frogger.png");
+}
+
+
 /* /////// */
 
 
@@ -261,6 +295,10 @@ body, html
   width:40%;
 }
 
+.cf-text::placeholder{
+  color:white;
+}
+
 .cf-container h1
 {
   position: relative;
@@ -289,4 +327,5 @@ body, html
 .cf-button
 {
   margin-top:3vh;
+  color:white;
 }
