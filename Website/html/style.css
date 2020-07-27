@@ -18,7 +18,7 @@ body, html
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #2c343f;
+  background-color: #110E19;
 }
 
 #canvas 
@@ -29,7 +29,7 @@ body, html
 
 .index-container, .contact-me, .about-me
 {
-  cursor: none;
+ 
   overflow: hidden;
   margin-bottom: -22vh;
 }
