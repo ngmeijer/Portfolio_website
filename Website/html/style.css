@@ -42,7 +42,8 @@ body, html
   color:white;
   font-size: 5vh;
   left:calc(100% - 88.5%);
-  top:-6vh;
+  top:-3.5vh;
+  z-index: 100;
 }
 
 .logo-container img
@@ -72,10 +73,10 @@ body, html
 {
   position: absolute;
   color:white;
-  top:5vh;
+  top:9vh;
   left:15%;  
   width:70%;
-  border:0.05px solid;
+  border:0.1px solid;
 }
 
 .introduction
@@ -90,22 +91,14 @@ body, html
 .introduction > #name
 {
   position: absolute;
-  top:3vh;
+  top:8vh;
   font-size: 4vw;
-}
-
-.introduction h2
-{
-  position: absolute;
-  left:calc(0% + 37%);
-  top:18.3vh;
-  font-size: 3.8vw;
 }
 
 .portfolioButton{
   position: relative;
   display:flex;  
-  width:40vw;
+  width:16vw;
   justify-content: center;
   border-radius: 20px;
   top:-30vh;
@@ -117,11 +110,19 @@ body, html
   background-color: rgba(0,0,0,0.3);
 }
 
+.introduction h2
+{
+  position: absolute;
+  transform:translate(-100%);
+  top:35vh;
+  font-size: 3.5vw;
+}
+
 .introduction span
 {
   position: absolute;
-  left:calc(100% - 51%);
-  top:25vh;
+  left:11vw;
+  margin-right: -490px;
   font-size: 3.5vw;
 }
 
@@ -163,7 +164,7 @@ body, html
   display:table;
   height:70vh;
   width:50%;
-  background-image: url("Images/TheLastLight.png");
+  background-image: url("Images/thelastlight.jpg");
 }
 
 .the-last-light .description{
@@ -213,7 +214,7 @@ body, html
   display:table;
   height:70vh;
   width:50%;
-  background-image: url("Images/out-of-the-shadows.png");
+  background-image: url("Images/out_of_the_shadows.jpg");
 }
 
 .out-of-the-shadows .description{
@@ -262,7 +263,7 @@ body, html
   display:table;
   height:70vh;
   width:50%;
-  background-image: url("Images/ahpuch.png");
+  background-image: url("Images/ahpuch.jpg");
 }
 
 .ahpuch .description{
@@ -311,7 +312,7 @@ body, html
   display:table;
   height:70vh;
   width:50%;
-  background-image: url("Images/leonard.png");
+  background-image: url("Images/leonard.jpg");
 }
 
 .leonard .description{
@@ -360,7 +361,7 @@ body, html
   display:table;
   height:75vh;
   width:30%;
-  background-image: url("Images/frogger.png");
+  background-image: url("Images/frogger.jpg");
 }
 
 .frogger .description{
