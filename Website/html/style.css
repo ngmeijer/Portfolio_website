@@ -445,6 +445,113 @@ body, html
   margin-right:2vw;
 }
 
+/* Graphs */
+.container {
+  position: relative;
+  text-align: center;
+  left:400px;
+  top:-500px;
+}
+
+.chart {
+  position: relative;
+  top:-30vh;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+  height: 400px;
+}
+
+svg .inner {
+  stroke: #000000;
+  fill: none;
+  stroke-width: 10;
+}
+
+.chart svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  z-index: 1;
+}
+
+.chart figcaption {
+  width: calc(80% - 10px);
+  height: calc(80% - 10px);
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+  left: calc( 50% - (75%/2) - -7px );
+  top: calc( 50% - (50%/2) - 13px);
+  -webkit-animation: see 1s;
+  animation: see 1s;
+}
+.chart figcaption h3{
+  font-family: arial;
+  font-weight: lighter;
+  font-size: 2vw;
+  color:rgb(255, 255, 255);
+}
+
+.outer {
+  fill: transparent;
+  stroke: #24107e;
+  stroke-width: 25;
+  stroke-dasharray: 251%;
+  -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+
+/* END Circle colors and graphic positions */
+
+/* Set the initial values for the animation */
+
+.chart[data-percent='75'] .outer {
+   stroke-dashoffset: -100%;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+.chart[data-percent='pizza'] .outer {
+  stroke-dashoffset: -262%;
+  -webkit-animation: pizza 1s;
+  animation: pizza 1s;
+}
+
+/* END set initial animation values */
+
+/* Keyframes for the initial animation */
+
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: -251%;
+  }
+  
+  to {
+    stroke-dashoffset: -100%;
+  }
+}
+
+@keyframes show75 {
+  from {
+        stroke-dashoffset: -251%;
+  }
+  
+  to {
+    stroke-dashoffset: -100%;
+  }
+}
+
+/* END Keyframes for the initial animation */
+
 .cf-container
 {
   background-color: rgba(0,0,0,0.3);

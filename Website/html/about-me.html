@@ -27,7 +27,8 @@
         </nav>
 
         <h1>About me</h1>
-        <p>I am a Game Design / Development student at Saxion Hogeschool, currently based in Enschede, The Netherlands.
+        <p>
+            I am a Game Design / Development student at Saxion Hogeschool, currently based in Enschede, The Netherlands.
             I love to make small games, together with friends/fellow students, or on my own.
             I'm always on the lookout for something new to learn.
 
@@ -41,8 +42,25 @@
         <div class="photo">
             <img src="Images/photo.jpg">
         </div>
-    </div>
-    <script src="background.js"></script>
+
+        <section class="container">
+            <!-- START - CIRCLE GRAPH -->
+            <div>
+              <figure class="chart" id="circle"data-percent="75">
+                <svg>
+                  <circle  class="inner"cx="1.5%" cy="52%" r="40%" transform="rotate(-90, 95, 95)"/>
+                  <circle class="outer" cx="1.5%" cy="52%" r="40%" transform="rotate(-90, 95, 95)"/>
+                </svg>
+      
+                <figcaption>
+                  <h3>HTML</h3>
+                  <h3>Beginner</h3>
+                </figcaption>
+              </figure>
+            </div>
+
+        <script src="background.js"></script>
+        <script src="skillsGraph.js"></script>
 </body>
 
 </html>
