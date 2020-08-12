@@ -77,7 +77,7 @@ bgCtx.fillRect(0, 0, width, height);
 // stars
 function Star(options) {
     this.size = Math.random() * 2;
-    this.speed = Math.random() * .05;
+    this.speed = Math.random() * .45;
     this.x = options.x;
     this.y = options.y;
 }
