@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
-/* color palette Black/red
-Chinese black: #111111
-Chinese black 2: #161616
-Eerie black: #1C1C1C
-Lust red: #E31C25
-UE red: #BB000E
-*/
+
 * 
 {
   font-family: 'Work Sans', sans-serif;
@@ -21,15 +15,8 @@ body, html
   background-color: #110E19;
 }
 
-#canvas 
-{
-  width: 100%;
-  height: 100%;
-}
-
 .index-container, .contact-me, .about-me
 {
- 
   overflow: hidden;
   margin-bottom: -22vh;
 }
@@ -446,111 +433,100 @@ body, html
 }
 
 /* Graphs */
-.container {
+.container{
   position: relative;
-  text-align: center;
-  left:400px;
-  top:-500px;
+  left:450px;
+  top:-920px;
+  width: 40%;
+  margin: 0 auto;
 }
 
-.chart {
+.container h1{
   position: relative;
-  top:-30vh;
+  top:0px;
+  left:0px;
+}
+
+.container h3{
+  font-size: 30px;
+  margin-top: -4vh;
+  margin-bottom: 5vh;
+}
+
+.container div{
+  position: relative;
+  top:-30px;
+}
+
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 35px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
   display: inline-block;
-  color: #999;
-  font-size: 20px;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 400px;
-  height: 400px;
+  padding: 7px 0 5px 25px;
+  border-radius: inherit;
+  animation: load 1s 0s;
+  -webkit-animation: load 1s 0s;
+  -moz-animation: load 1s 0s;
+  -o-animation: load 1s 0s;
 }
 
-svg .inner {
-  stroke: #000000;
-  fill: none;
-  stroke-width: 10;
+.bar.languages::before{
+  background-color: #ff6600;
 }
 
-.chart svg {
-  position: relative;
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  z-index: 1;
+.bar.software::before{
+  background-color: #001263;
 }
 
-.chart figcaption {
-  width: calc(80% - 10px);
-  height: calc(80% - 10px);
-  border-radius: 100%;
-  position: absolute;
-  z-index: 1;
-  left: calc( 50% - (75%/2) - -7px );
-  top: calc( 50% - (50%/2) - 13px);
-  -webkit-animation: see 1s;
-  animation: see 1s;
+.bar.css::before{
+  width: calc(35% - 10px);
 }
-.chart figcaption h3{
-  font-family: arial;
-  font-weight: lighter;
-  font-size: 2vw;
-  color:rgb(255, 255, 255);
+.bar.html::before{
+  width: calc(35% - 10px);
 }
-
-.outer {
-  fill: transparent;
-  stroke: #24107e;
-  stroke-width: 25;
-  stroke-dasharray: 251%;
-  -webkit-animation-play-state: running;
-    /* firefox bug fix - won't rotate at 90deg angles */
-  -moz-transform: rotate(-89deg) translateX(-190px);
+.bar.csharp::before{
+  width: calc(30% - 10px);
 }
-
-
-/* END Circle colors and graphic positions */
-
-/* Set the initial values for the animation */
-
-.chart[data-percent='75'] .outer {
-   stroke-dashoffset: -100%;
-  -webkit-animation: show75 2s;
-  animation: show75 2s;
+.bar.unity::before{
+  width: calc(40% - 10px);
 }
-
-.chart[data-percent='pizza'] .outer {
-  stroke-dashoffset: -262%;
-  -webkit-animation: pizza 1s;
-  animation: pizza 1s;
+.bar.houdini::before{
+  width: calc(20% - 10px);
 }
-
-/* END set initial animation values */
-
-/* Keyframes for the initial animation */
-
-@-webkit-keyframes show75 {
-  from {
-    stroke-dashoffset: -251%;
-  }
-  
-  to {
-    stroke-dashoffset: -100%;
-  }
-}
-
-@keyframes show75 {
-  from {
-        stroke-dashoffset: -251%;
-  }
-  
-  to {
-    stroke-dashoffset: -100%;
-  }
-}
-
-/* END Keyframes for the initial animation */
+/**/
 
 .cf-container
 {
