@@ -41,3 +41,17 @@
   margin-top:3vh;
   color:white;
 }
+
+.social-media
+{
+  display:flex;
+  justify-content: center;
+  position: relative;
+  top:-10vh;
+}
+
+.social-media div
+{
+  margin-left:2vw;
+  margin-right:2vw;
+}

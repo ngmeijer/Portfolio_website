@@ -21,6 +21,10 @@ body, html
   margin-bottom: -61vh;
 }
 
+.project-container{
+  overflow-x: hidden;
+}
+
 .contact-me{
   overflow:hidden;
   margin-bottom: -20vh;
