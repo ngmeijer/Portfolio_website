@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+* 
+{
+  font-family: 'Work Sans', sans-serif;
+  color:white;
+  font-weight: 100;
+}
+
+body, html
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #110E19;
+}
+
+.index-container, .about-me
+{
+  overflow: hidden;
+  margin-bottom: -61vh;
+}
+
+.contact-me{
+  overflow:hidden;
+  margin-bottom: -20vh;
+}
+
+.menu ul
+{
+  position: fixed;
+  display:inline-flex;
+  list-style: none;
+  color:white;
+  font-size: 5vh;
+  left:calc(100% - 88.5%);
+  top:-3.5vh;
+  z-index: 100;
+}
+
+.logo-container img
+{
+  position: absolute;
+  width:7%;
+  top:-2vh;
+  transform: scale(0.7);
+  margin-bottom: -0.8vh;
+}
+
+.nav-link
+{
+  text-decoration: none;
+  color:rgb(182, 182, 182);
+  margin:0 12vw 0 0;
+  opacity: 60%;
+}
+
+.nav-link:hover 
+{
+  opacity: 100%;
+  color:white;
+}
+
+.horizontal-line
+{
+  position: absolute;
+  color:white;
+  top:9vh;
+  left:15%;  
+  width:70%;
+  border:0.1px solid;
+}

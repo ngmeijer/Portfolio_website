@@ -1,0 +1,246 @@
+/* ////// */
+
+.the-last-light h1{
+  position:relative;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.the-last-light{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:10vh;
+  display:table;
+  height:70vh;
+  width:50%;
+  background-image: url("Images/thelastlight.jpg");
+}
+
+.the-last-light .description{
+  position: relative;
+  top:6vh;
+  font-size: 3vh;
+  margin:50px;
+  text-align: justify;
+  color:white;
+  opacity:1;
+}
+
+.the-last-light .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s ease;
+  background-color: #000000;
+}
+
+.the-last-light:hover .overlay {
+  opacity: 0.7;
+}
+
+.the-last-light:hover .description{
+  opacity:1;
+  color:white;
+}
+
+.out-of-the-shadows h1{
+  position:relative;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.out-of-the-shadows{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:10vh;
+  left:50%;
+  display:table;
+  height:70vh;
+  width:50%;
+  background-image: url("Images/out_of_the_shadows.jpg");
+}
+
+.out-of-the-shadows .description{
+  position: relative;
+  top:6vh;
+  font-size: 3vh;
+  margin:50px;
+  text-align: justify;
+  color:white;
+  opacity:1;
+}
+
+.out-of-the-shadows .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s ease;
+  background-color: #000000;
+}
+
+.out-of-the-shadows:hover .overlay {
+  opacity: 0.7;
+}
+
+.out-of-the-shadows:hover .description{
+  opacity:1;
+}
+
+.ahpuch h1{
+  position:relative;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.ahpuch{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:80vh;
+  left:50%;
+  display:table;
+  height:70vh;
+  width:50%;
+  background-image: url("Images/ahpuch.jpg");
+}
+
+.ahpuch .description{
+  position: relative;
+  top:6vh;
+  font-size: 3vh;
+  margin:50px;
+  text-align: justify;
+  color:white;
+  opacity:1;
+}
+
+.ahpuch .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s ease;
+  background-color: #000000;
+}
+
+.ahpuch:hover .overlay {
+  opacity: 0.7;
+}
+
+.ahpuch:hover .description{
+  opacity:1;
+}
+
+
+.leonard h1{
+  position:relative;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.leonard{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:80vh;
+  display:table;
+  height:70vh;
+  width:50%;
+  background-image: url("Images/leonard.jpg");
+}
+
+.leonard .description{
+  position: relative;
+  top:6vh;
+  font-size: 3vh;
+  margin:50px;
+  text-align: justify;
+  color:white;
+  opacity:1;
+}
+
+.leonard .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s ease;
+  background-color: #000000;
+}
+
+.leonard:hover .overlay {
+  opacity: 0.7;
+}
+
+.leonard:hover .description{
+  opacity:1;
+}
+
+.frogger h1{
+  position:relative;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.frogger{
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top:150vh;
+  left:35%;
+  display:table;
+  height:75vh;
+  width:30%;
+  background-image: url("Images/frogger.jpg");
+}
+
+.frogger .description{
+  position: relative;
+  top:6vh;
+  font-size: 3vh;
+  margin:50px;
+  text-align: justify;
+  color:white;
+  opacity:1;
+}
+
+.frogger .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s ease;
+  background-color: #000000;
+}
+
+.frogger:hover .overlay {
+  opacity: 0.7;
+}
+
+.frogger:hover .description{
+  opacity:1;
+}

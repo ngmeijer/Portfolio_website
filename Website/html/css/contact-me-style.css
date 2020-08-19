@@ -1,0 +1,43 @@
+.cf-container
+{
+  background-color: rgba(0,0,0,0.3);
+  padding:2.5vw;
+  position: absolute;
+  transform: translate(60%, -100%);
+  width:40%;
+}
+
+.cf-text::placeholder{
+  color:white;
+}
+
+.cf-container h1
+{
+  position: relative;
+  top:5vh;
+  margin-top:-5vh;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.input-container label{
+  font-size: 1.5vw;
+}
+
+.cf-text, .cf-button
+{
+  background-color: rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  width:100%;
+  display:block;
+  font-size: 3.5vh;
+  color:black;
+  border:none;
+  margin-bottom: 1vh;
+}
+
+.cf-button
+{
+  margin-top:3vh;
+  color:white;
+}
