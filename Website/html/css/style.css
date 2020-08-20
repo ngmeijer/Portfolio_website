@@ -70,7 +70,55 @@ body, html
   position: absolute;
   color:white;
   top:9vh;
-  left:15%;  
-  width:70%;
+  left:5%;  
+  width:90%;
   border:0.1px solid;
+}
+
+@media all and (max-width:960px){
+  .menu ul
+  {
+    position: fixed;
+    display:inline-flex;
+    list-style: none;
+    color:white;
+    font-size: 3.5vh;
+    margin-right: -100px;
+    left:-3vw;
+    top:-1vh;
+    z-index: 100;
+  }
+  
+  .logo-container img
+  {
+    position: absolute;
+    width:15%;
+    top:8vh;
+    transform: scale(0.7);
+    margin-bottom: -0.8vh;
+  }
+  }
+
+@media all and (max-width:533px){
+.menu ul
+{
+  position: fixed;
+  display:inline-flex;
+  list-style: none;
+  color:white;
+  font-size: 2.3vh;
+  margin-right: -100px;
+  left:-7vw;
+  top:1vh;
+  z-index: 100;
+}
+
+.logo-container img
+{
+  position: absolute;
+  width:20%;
+  top:8vh;
+  transform: scale(0.7);
+  margin-bottom: -0.8vh;
+}
 }
