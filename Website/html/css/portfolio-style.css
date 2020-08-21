@@ -1,4 +1,4 @@
-/* DESKTOP */
+/* ////// */
 .horizontal-line
 {
   position: absolute;
@@ -8,6 +8,7 @@
   width:70%;
   border:0.1px solid;
 }
+
 
 .the-last-light h1{
   position:relative;
@@ -181,6 +182,7 @@
   position: absolute;
   top:80vh;
   display:table;
+  height:70vh;
   width:50%;
   background-image: url("Images/leonard.jpg");
 }
@@ -201,11 +203,11 @@
 
 .leonard .overlay {
   position: absolute;
-  top: 18.5%;
+  top: 18%;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 81%;
+  height: 78%;
   width: 100%;
   opacity: 0;
   transition: 0.8s ease;
@@ -267,119 +269,4 @@
 
 .frogger:hover .description{
   opacity:1;
-}
-
-/* TABLET */
-/*
-@media all and (max-width:1200px){
-
-  #game-projects h1{
-    font-size: 5vh;
-  }
-
-  #game-projects div{
-    position: absolute;
-    width:100%;
-  }
-
-  #game-projects .overlay{
-    width:100%;
-    height:78.6%;
-  }
-
-  #game-projects .description{
-    font-size: 1.5vh;
-    top:-5vh;
-    left:-9vw;
-    margin-right: -50px;
-
-  }
-
-  .the-last-light{
-    top:15vh;
-  }
-
-  .out-of-the-shadows{
-    left:0vw;
-    top:80vh;
-  }
-
-  .leonard{
-    top:145vh;
-  }
-
-  .leonard .overlay{
-    padding-bottom: 132px;
-  }
-
-  .ahpuch{
-    left:0vw;
-    top:216vh;
-  }
-
-  .frogger{
-    left:0vw;
-    top:265vh;
-  }
-
-  .frogger .overlay{
-    padding-bottom:410px;
-  }
-}*/
-
-/* MOBILE */
-@media all and (max-width:533px){
-
-  #game-projects h1{
-    font-size: 3vh;
-  }
-
-  #game-projects div{
-    position: absolute;
-    width:100%;
-  }
-
-  #game-projects .overlay{
-    width:100%;
-    top:7.5vh;
-    height:43%;
-  }
-
-  #game-projects .description{
-    font-size: 2.5vh;
-    top:-5vh;
-    left:-9vw;
-    margin-right: -50px;
-  }
-
-  .the-last-light{
-    top:15vh;
-  }
-
-  .out-of-the-shadows{
-    left:0vw;
-    top:52vh;
-  }
-
-  .leonard{
-    top:90vh;
-  }
-
-  .leonard .overlay{
-    padding-bottom: 132px;
-  }
-
-  .ahpuch{
-    left:0vw;
-    top:128vh;
-  }
-
-  .frogger{
-    left:0vw;
-    top:165vh;
-  }
-
-  .frogger .overlay{
-    padding-bottom:410px;
-  }
 }
