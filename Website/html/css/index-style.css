@@ -67,3 +67,31 @@
     content: 'Web Developer';
   }
 }
+
+@media all and (max-width: 500px) {
+  .introduction > #name
+  {
+    position: absolute;
+    top:8vh;
+    font-size: 10vw;
+  }
+
+  .introduction h2
+  {
+    position: absolute;
+    transform:translate(-100%);
+    top:35vh;
+    font-size: 6.5vw;
+  }
+  
+  .introduction span{
+    margin-right: -700px;
+    left:20vw;
+    font-size: 6.5vw;
+  }
+
+  .portfolioButton{
+    width:50vw;
+    font-size: 7vw;
+  }
+}

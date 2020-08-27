@@ -28,26 +28,6 @@
   margin-bottom: -0.8vh;
 }
 
-/* //////// */
-.contact-me
-{
-  overflow-x:hidden;
-}
-
-.social-media
-{
-  display:flex;
-  justify-content: center;
-  position: relative;
-  top:-12vh;
-}
-
-.social-media div
-{
-  margin-left:2vw;
-  margin-right:2vw;
-}
-
 /* Graphs */
 .container{
   position: relative;
@@ -142,4 +122,45 @@
 .bar.houdini::before{
   width: calc(20% - 10px);
 }
-/**/
+
+@media all and (max-width: 500px) {
+  .photo img{
+    left:55vw;
+    width:50%;
+  }
+
+  .about-me p
+  {
+   position: absolute;
+   top:16vh;
+   left:10vw;
+   font-size: 4vw;
+   margin-right: 40vw;
+  }
+
+  .container{
+    position: relative;
+    top:-35vh;
+    left:0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .container h1{
+    position: relative;
+    top:-3vh;
+    font-size: 7vw;
+    left:0px;
+  }
+  
+  .container h3{
+    font-size: 30px;
+    margin-top: -4vh;
+    margin-bottom: 5vh;
+  }
+  
+  .container div{
+    position: relative;
+    top:-30px;
+  }
+}

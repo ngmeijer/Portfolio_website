@@ -4,8 +4,8 @@
   position: absolute;
   color:white;
   top:9vh;
-  left:15%;  
-  width:70%;
+  left:20%;  
+  width:60%;
   border:0.1px solid;
 }
 
@@ -47,7 +47,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 78%;
+  height: 78.5%;
   width: 100%;
   opacity: 0;
   transition: 0.8s ease;
@@ -101,7 +101,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 78%;
+  height: 78.5%;
   width: 100%;
   opacity: 0;
   transition: 0.8s ease;
@@ -154,7 +154,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 78%;
+  height: 78.8%;
   width: 100%;
   opacity: 0;
   transition: 0.8s ease;
@@ -207,7 +207,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 78%;
+  height: 78.5%;
   width: 100%;
   opacity: 0;
   transition: 0.8s ease;
@@ -237,7 +237,7 @@
   display:table;
   height:75vh;
   width:30%;
-  background-image: url("Images/frogger.jpg");
+  background-image: url("Images/frogger.png");
 }
 
 .frogger .description{
@@ -269,4 +269,71 @@
 
 .frogger:hover .description{
   opacity:1;
+}
+
+@media all and (max-width: 500px) {
+  .the-last-light{
+    width:100%;
+  }
+
+  .the-last-light .overlay{
+    height:44%;
+  }
+
+  .the-last-light .description{
+    top:-1vh;
+    height: 28%;
+    width: 80%;
+    font-size: 4vw;
+  }
+
+  .out-of-the-shadows{
+    width:100%;
+    top:53vh;
+    left:0vw;
+  }
+
+  .out-of-the-shadows .overlay{
+    height:44%;
+  }
+
+  .out-of-the-shadows .description{
+    top:-1vh;
+    height: 28%;
+    width: 80%;
+    font-size: 4vw;
+  }
+
+  .leonard{
+    width:100%;
+    top:96vh;
+  }
+
+  .leonard .overlay{
+    top:18.5vh;
+    height:43.7%;
+  }
+
+  .leonard .description{
+    height: 28%;
+    width: 80%;
+    font-size: 4vw;
+  }
+
+  .ahpuch{
+    width:100%;
+    top:145vh;
+    left:0vw;
+  }
+
+  .ahpuch .overlay{
+    height:43.8%;
+  }
+
+  .ahpuch .description{
+    height: 28%;
+    width: 80%;
+    top:4vh;
+    font-size: 4vw;
+  }
 }
