@@ -13,7 +13,7 @@
 
         $phonenumber = "Their phone-number is: ".$phone.".\n\n";
 
-        mail($mailTo, $subject, $txt, $headers);
+        mail($mailTo, $subject, $txt, $headers, $phonenumber);
         header("Location: contact-me.html?emailsent");
     }
 ?>

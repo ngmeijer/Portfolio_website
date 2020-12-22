@@ -24,14 +24,12 @@ body, html
   background-color: #110E19;
 }
 
-.index-container
-{
-  overflow: hidden;
-  margin-bottom: -61vh;
-}
-
 .project-container{
   overflow-x: hidden;
+}
+
+.about-me {
+  margin-bottom: 1;
 }
 
 .contact-me{

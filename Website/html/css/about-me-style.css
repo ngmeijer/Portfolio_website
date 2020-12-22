@@ -1,6 +1,4 @@
 /* /////// */
-
-
 .about-me h1
 {
   position: absolute;
@@ -107,6 +105,11 @@
   background-color: #001263;
 }
 
+.bar.soft-skills::before{
+  background-color: #00631e;
+}
+
+
 .bar.css::before{
   width: calc(35% - 10px);
 }
@@ -114,13 +117,29 @@
   width: calc(35% - 10px);
 }
 .bar.csharp::before{
-  width: calc(30% - 10px);
+  width: calc(35% - 10px);
 }
+.bar.cpp::before{
+  width: calc(20% - 10px);
+}
+
+
 .bar.unity::before{
   width: calc(40% - 10px);
 }
-.bar.houdini::before{
+.bar.git::before{
   width: calc(20% - 10px);
+}
+
+
+.bar.teamworker::before{
+  width: calc(40% - 10px);
+}
+.bar.presenter::before{
+  width: calc(30% - 10px);
+}
+.bar.creativity::before{
+  width: calc(60% - 10px);
 }
 
 @media all and (max-width: 500px) {
