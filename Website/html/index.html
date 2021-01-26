@@ -4,39 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-style.css">
     <link rel="stylesheet" type="text/css" href="css/index-style.css">
     <title>Nils Meijer | Home</title>
 </head>
 
 <body>
-    <div class="index-container">
-        <canvas id="bgCanvas"></canvas>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="logo">
+                    <a href="#" class="nav-link">
+                        <img src="logo.png" style="width:150px ">
+                    </a>
+                </li>
 
-        <div class="logo-container">
-            <img src="logo.png">
-        </div>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">Home</span>
+                        <i class="fa fa-home" style="font-size: 75px;"></i>
+                    </a>
+                </li>
 
-        <div class="horizontal-line">
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a class="nav-link" href="index.html"> Home</a> </li>
-                <li><a class="nav-link" href="portfolio.html"> Portfolio</a> </li>
-                <li><a class="nav-link" href="about-me.html"> About</a></li>
-                <li><a class="nav-link" href="contact-me.html"> Contact me</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">Portfolio</span>
+                        <i class="fa fa-code" style="font-size: 75px;"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">About me</span>
+                        <i class="fa fa-address-card" style="font-size: 75px;"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">Contact</span>
+                        <i class="fa fa-envelope" style="font-size: 75px;"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
+    </header>
+
+    <div class="index-container">
+        <div class="blurred-background"></div>
 
         <div class="introduction">
-            <h1 id="name">Nils Meijer</h1>
-            <h2>I am a
-                <span></span>
-            </h2>
-            <a class="portfolioButton" href="portfolio.html"> See portfolio</a>
+            <h1 id="first-name">Nils</h1>
+            <h1 id="sur-name">Meijer</h1>
+            <div id="professions">
+                Programmer
+                <br>
+                Web Developer
+                <br>
+                Game Designer
+            </div>
         </div>
     </div>
+    
+    <canvas id="bgCanvas"></canvas>
     <script src="background.js"></script>
+
 </body>
 
 </html>

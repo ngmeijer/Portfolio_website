@@ -1,97 +1,38 @@
-.introduction
-{
-  width:100%;
-  height:100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
-.introduction > #name
-{
+.index-container{
   position: absolute;
-  top:8vh;
-  font-size: 4vw;
 }
 
-.portfolioButton{
-  position: relative;
-  display:flex;  
-  width:16vw;
-  justify-content: center;
-  border-radius: 20px;
-  top:-30vh;
-  font-size: 5vh;
-  text-decoration: none;
+.blurred-background{
+  width:35vw;
+  height:100vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter:blur(8px);
+  opacity: 0.3;
 }
 
-.portfolioButton:hover{
-  background-color: rgba(0,0,0,0.3);
-}
-
-.introduction h2
-{
+.introduction{
+  display:flex;
   position: absolute;
-  transform:translate(-100%);
-  top:35vh;
-  font-size: 3.5vw;
+  top:20vh;
 }
 
-.introduction span
-{
-  position: absolute;
-  left:11vw;
-  margin-right: -700px;
-  font-size: 3.5vw;
+#first-name{
+  position:fixed;
+  right:65vw;
+  font-size: 8rem;
 }
 
-.introduction span:before 
-{
-  content: '';
-  -webkit-animation: jobAnimation infinite 8s;
-          animation: jobAnimation infinite 8s;
+#sur-name{
+  position:fixed;
+  left:35vw;
+  font-size: 8rem;
+  font-weight: bold;
 }
 
-@keyframes jobAnimation 
-{
-  0% {
-    content: 'Web Developer';
-  }
-  33% {
-    content: 'Programmer';
-  }
-  66% {
-    content: 'Game Designer';
-  }
-  100% {
-    content: 'Web Developer';
-  }
-}
-
-@media all and (max-width: 500px) {
-  .introduction > #name
-  {
-    position: absolute;
-    top:8vh;
-    font-size: 10vw;
-  }
-
-  .introduction h2
-  {
-    position: absolute;
-    transform:translate(-100%);
-    top:35vh;
-    font-size: 6.5vw;
-  }
-  
-  .introduction span{
-    margin-right: -700px;
-    left:20vw;
-    font-size: 6.5vw;
-  }
-
-  .portfolioButton{
-    width:50vw;
-    font-size: 7vw;
-  }
+#professions{
+  position:fixed;
+  text-align: right;
+  top:40vh;
+  right:65vw;
+  font-size: 1.5rem;
 }
