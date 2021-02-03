@@ -8,7 +8,7 @@
 // Terrain stuff.
 var background = document.getElementById("bgCanvas"),
     bgCtx = background.getContext("2d"),
-    width = window.innerWidth,
+    width = window.outerWidth,
     height = document.body.offsetHeight;
 
 (height < 400) ? height = 400 : height;

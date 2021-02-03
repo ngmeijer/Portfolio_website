@@ -24,11 +24,10 @@ main{
 }
 
 .navbar{
+  z-index: 100;
   position:fixed;
   right: 0;
   display:flex;
-  background-color: var(--bg-primary);
-  transition: width 150ms ease;
   align-items: center;
 }
 
@@ -40,10 +39,6 @@ main{
   flex-direction: column;
 }
 
-.nav_item{
-  width:100%;
-}
-
 .nav-link{
   text-decoration: none;
   display:flex;
@@ -52,7 +47,7 @@ main{
   height:5rem;
   color:var(--text-primary);
   filter:grayscale(100%) opacity(0.5);
-  transition: var(--transition-speed);
+  transition: var(--transition-speed) ease-in-out;
 }
 
 .nav-link:hover{

@@ -11,9 +11,9 @@
   font-family: 'Work Sans', sans-serif;
   --text-primary:white;
   --text-secondary:rgb(255, 255, 255);
-  --bg-primary:rgba(0, 0, 0, 0);
+  --bg-primary:hsla(0, 0%, 13%, 0.192);
   --bg-secondary:rgba(255, 0, 0, 0);
-  --transition-speed: 600ms;
+  --transition-speed: 800ms;
   font-weight: 400;
 }
 
@@ -29,7 +29,6 @@ body::-webkit-scrollbar-thumb{
   background:#483285;
 }
 
-
 body{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -44,4 +43,10 @@ body, html
   padding: 0;
   height: 100%;
   background-color: #110E19;
+  overflow: hidden;
+}
+
+#bgCanvas{
+  width:100%;
+  height:100%;
 }

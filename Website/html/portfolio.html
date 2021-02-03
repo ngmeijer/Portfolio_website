@@ -4,105 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-style.css">
     <link rel="stylesheet" type="text/css" href="css/portfolio-style.css">
     <title>Nils Meijer | Portfolio</title>
 </head>
 
+<header>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+                <a href="#" class="nav-link">
+                    <img src="logo.png" style="width:150px">
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <span class="link-text">Home</span>
+                    <i class="fa fa-home" style="font-size: 75px;"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="portfolio.html" class="nav-link">
+                    <span class="link-text">Portfolio</span>
+                    <i class="fa fa-code" style="font-size: 75px;"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="link-text">About me</span>
+                    <i class="fa fa-address-card" style="font-size: 75px;"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="link-text">Contact</span>
+                    <i class="fa fa-envelope" style="font-size: 75px;"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
 <body>
-    <div class="project-container">
-        <canvas id="bgCanvas"></canvas>
-        <header>
-            <div class="logo-container">
-                <img src="logo.png">
-            </div>
-        </header>
-
-        <div class="horizontal-line"></div>
-
-        <nav class="menu">
-            <ul>
-                <li><a class="nav-link" href="index.html"> Home</a> </li>
-                <li><a class="nav-link" href="portfolio.html"> Portfolio</a> </li>
-                <li><a class="nav-link" href="about-me.html"> About</a> </li>
-                <li><a class="nav-link" href="contact-me.html"> Contact me</a> </li>
-            </ul>
-        </nav>
-
-        <div id="game-projects">
-            <div class="the-last-light">
-                <h1>The Last Light</h1>
-                <img src="Images/thelastlight.jpg" alt="the-last-light">
-                <div class="overlay">
-                    <div class="description">
-                        <p>
-                            "The Last Light", a first-person sci-fi runner, made with C# in the Unity
-                            Engine. I spent about 4 weeks on the concept and the development itself. 
-                            Initially, it was an assignment for one of my courses, Unity Game Scripting, 
-                            but I decided I wanted to take it further and 
-                            keep working on it after assessment.
-                        </p>
-                    </div>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <div class="portfolio-item-blur-background">
+                <div class="portfolio-item-name">
+                    Nether Fights
                 </div>
             </div>
-
-            <div class="out-of-the-shadows">
-                <h1>Out of the Shadows</h1>
-                <img src="Images/out_of_the_shadows.png" alt="out-of-the-shadows">
-                <div class="overlay">
-                    <div class="description">
-                        <p>
-                            This was one of my projects from the year before I got admitted to CMGT at
-                            Saxion. It was my first "bigger" project in the Unity Engine and in C#. 
-                            It's a top-down stealth strategy game.
-                        </p>
-                    </div>
-                </div>
+            <div class="portfolio-item-image">
+                <img src="Images/NetherFights.png">
             </div>
-
-            <div class="ahpuch">
-                <h1> The Secrets of Ahpuch </h1>
-                <img src="Images/ahpuch.jpg" alt="ahpuch">
-                <div class="overlay">
-                    <div class="description">
-                        <p>
-                            This game was the 3rd project in my 1st year of my Game Development
-                            bachelor. Together with 5 fellow students, we combined our skills, 
-                            with "The Secrets of Ahpuch" being the end result.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="leonard">
-                <h1>The Legend of Leonard Danger</h1>
-                <img src="Images/leonard.jpg" alt="leonard-danger">
-                <div class="overlay">
-                    <div class="description">
-                        <p>
-                            This project was the 2nd project I made with my fellow students. This time
-                            it was made in Processing, written with JavaScript.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="frogger">
-                <h1>Frogger 1981 remake</h1>
-                <img src="Images/frogger.jpg" alt="frogger">
-                <div class="overlay">
-                    <div class="description">
-                        <p>
-                            In the 2nd quartile of the 1st year, we were tasked to recreate an old arcade game, possibly
-                            with your own
-                            chosen theme.
-                        </p>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
-    <script src="background.js"></script>
+
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <div class="portfolio-item-blur-background">
+                <div class="portfolio-item-name">
+                    The Last Light
+                </div>
+            </div>
+            <div class="portfolio-item-image">
+                <img src="Images/thelastlight.jpg">
+            </div>
+        </div>
+    </div>
+
+    <canvas id="bgCanvas"></canvas>
+    <!-- <script src="background.js"></script> -->
 </body>
 
 </html>
