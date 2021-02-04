@@ -14,38 +14,35 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="arrow">
+                <img src="icons8-expand-arrow-128.png">
+            </div>
             <ul class="navbar-nav">
-                <li class="logo">
-                    <a href="#" class="nav-link">
-                        <img src="logo.png" style="width:150px ">
-                    </a>
-                </li>
-
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">
-                        <span class="link-text">Home</span>
                         <i class="fa fa-home" style="font-size: 75px;"></i>
+                        <span class="link-text">Home</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="portfolio.html" class="nav-link">
-                        <span class="link-text">Portfolio</span>
                         <i class="fa fa-code" style="font-size: 75px;"></i>
+                        <span class="link-text">Portfolio</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
+                        <i class="fa fa-address-card" style="font-size: 85px;"></i>
                         <span class="link-text">About me</span>
-                        <i class="fa fa-address-card" style="font-size: 75px;"></i>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <span class="link-text">Contact</span>
                         <i class="fa fa-envelope" style="font-size: 75px;"></i>
+                        <span class="link-text">Contact</span>
                     </a>
                 </li>
             </ul>
@@ -55,6 +52,12 @@
     <div class="index-container">
         <div class="blurred-background"></div>
 
+        <div class="logo">
+            <a href="index.html" class="nav-link">
+                <img src="logo.png" style="width:150px ">
+            </a>
+        </div>
+        
         <div class="introduction">
             <h1 id="first-name">Nils</h1>
             <h1 id="sur-name">Meijer</h1>
@@ -67,7 +70,7 @@
             </div>
         </div>
     </div>
-    
+
     <canvas id="bgCanvas"></canvas>
     <script src="background.js"></script>
 

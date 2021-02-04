@@ -2,8 +2,15 @@
   position: absolute;
 }
 
+.logo{
+  position:absolute;
+  left: 3vw;
+  top: 5vh;
+  width:100%;
+}
+
 .blurred-background{
-  width:35vw;
+  width:45vw;
   height:100vh;
   background: var(--bg-primary);
   backdrop-filter: blur(3px);
@@ -18,21 +25,23 @@
 
 #first-name{
   position:fixed;
-  right:65vw;
+  right:55vw;
   font-size: 8rem;
 }
 
 #sur-name{
   position:fixed;
-  left:35vw;
+  left:45vw;
   font-size: 8rem;
   font-weight: bold;
+  margin-right: 0.5vw;
 }
 
 #professions{
   position:fixed;
   text-align: right;
   top:60vh;
-  right:65vw;
+  right:55vw;
   font-size: 1.5rem;
+  margin-right:0.5vw;
 }

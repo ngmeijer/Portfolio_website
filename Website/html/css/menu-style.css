@@ -1,34 +1,11 @@
 
-main{
-  margin-right:5rem;
-}
-
-.logo{
-  font-weight:bold;
-  margin-bottom: 4rem;
-  text-align:center;
-  color:var(--text-secondary);
-  background:var(--bg-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.8ch;
-  width:100%;
-}
-
-.logo img{
-  transform:rotate(0deg);
-  transition: transform var(--transition-speed);
-}
-
-.navbar:hover .logo img{
-  transform:rotate(-90deg);
-}
-
 .navbar{
   z-index: 100;
-  position:fixed;
-  right: 0;
+  position: absolute;
+  left: -11vw;
   display:flex;
   align-items: center;
+  transition:1s;
 }
 
 .navbar-nav{
@@ -36,18 +13,38 @@ main{
   padding:0;
   margin:0;
   display:flex;
+  position: relative;
+  left:1vw;
   flex-direction: column;
+}
+
+.arrow{
+  position: absolute;
+  left:12vw;
+  transition:1s;
+}
+
+.nav-item{
+  position: relative;
 }
 
 .nav-link{
   text-decoration: none;
   display:flex;
-  float:right;
+  float:left;
   align-items: center;
   height:5rem;
   color:var(--text-primary);
   filter:grayscale(100%) opacity(0.5);
   transition: var(--transition-speed) ease-in-out;
+}
+
+.navbar:hover{
+  left:1vw;
+}
+
+.navbar:hover .arrow{
+  transform:rotate(180deg);
 }
 
 .nav-link:hover{
@@ -67,27 +64,13 @@ main{
 }
 
 .nav-link i{
-  min-width: 2rem;
-  margin: 0 1.5rem;
+  display:flex;
+  justify-content: center;
+  width:5vw;
 }
 
 .fa-primary, .fa-secondary{
   transition: var(--transition-speed);
-}
-
-.blurred_background{
-  position: absolute;
-  background-color:rgba(255, 255, 255, 0.2);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 50%;
-  backdrop-filter: blur(4px);
-}
-
-.introduction{
-  font-size: 80px;
 }
 
 /* Small screens */
@@ -118,7 +101,7 @@ main{
 /* Large screens */
 @media only screen and (min-width:600px){
   .navbar{
-    width:12rem;
+    width:17rem;
     height:100vh;
   }
 
