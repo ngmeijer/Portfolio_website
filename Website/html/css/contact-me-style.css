@@ -13,6 +13,21 @@
   margin:0;
 }
 
+#invitation{
+  position: absolute;
+  top:8vh;
+  left:16vw;
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+#invitation > #background{
+  width:30vw;
+  height:20vh;
+  background:rgba(93, 93, 94, 0.1);
+  padding:2vw;
+}
+
 .contact-form{
   display:flex;
   flex-direction: column;
