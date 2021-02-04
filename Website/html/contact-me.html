@@ -4,98 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/contact-me-style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-style.css">
     <script href="contact-form.php"></script>
     <title>Nils Meijer | Contact me</title>
 </head>
 
 <body>
-    <div class="contact-me">
-        <canvas id="bgCanvas"></canvas>
-        <header>
-            <div class="logo-container">
-                <img src="logo.png">
+    <header>
+        <nav class="navbar">
+            <div class="arrow">
+                <img src="icons8-expand-arrow-128.png">
             </div>
-        </header>
-
-        <div class="horizontal-line"></div>
-        
-        <main>
-            <nav class="menu">
-                <ul>
-                    <li><a class="nav-link" href="index.html"> Home</a> </li>
-                    <li><a class="nav-link" href="portfolio.html"> Portfolio</a> </li>
-                    <li><a class="nav-link" href="about-me.html"> About</a> </li>
-                    <li><a class="nav-link" href="contact-me.html"> Contact me</a> </li>
-                </ul>
-            </nav>
-
-            <nav class="social-media">
-                <div class="twitter">
-                    <a href="https://twitter.com/NilsGMeijer">
-                        <img src="twitter.png" alt="twitter">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa fa-home" style="font-size: 75px;"></i>
+                        <span class="link-text">Home</span>
                     </a>
-                </div>
+                </li>
 
-                <div class="github">
-                    <a href="https://github.com/ngmeijer">
-                        <img class="github" src="github.png" alt="github">
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">
+                        <i class="fa fa-code" style="font-size: 75px;"></i>
+                        <span class="link-text">Portfolio</span>
                     </a>
-                </div>
+                </li>
 
-                <div class="discord">
-                    <a href="">
-                        <img class="discord" src="discord.png" alt="discord">
+                <li class="nav-item">
+                    <a href="about-me.html" class="nav-link">
+                        <i class="fa fa-address-card" style="font-size: 85px;"></i>
+                        <span class="link-text">About me</span>
                     </a>
-                </div>
+                </li>
 
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/nils-meijer-2a26611a6/">
-                        <img class="linkedin" src="linkedin.png" alt="linkedin">
+                <li class="nav-item">
+                    <a href="contact-me.html" class="nav-link">
+                        <i class="fa fa-envelope" style="font-size: 75px;"></i>
+                        <span class="link-text">Contact</span>
                     </a>
-                </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-                <div class="google-play">
-                    <a href="https://play.google.com/store/apps/developer?id=Meijer+Games">
-                        <img class="google-play" src="playstore.png" alt="google-play">
-                    </a>
-                </div>
-            </nav>
+    <div id="social-media">
+        <div class="platform">
+            <img src="twitter.png" height=80px>
+        </div>
+        <div class="platform">
+            <img src="discord.png" height=80px color=white>
+        </div>
+
+        <div class="platform">
+            <img src="playstore.png" height=80px>
+        </div>
+
+        <div class="platform">
+            <img src="linkedin.png" height=80px>
+        </div>
+
+        <div class="platform">
+            <img src="git.png" height=80px>
+        </div>
     </div>
 
-    <div class="cf-container">
-        <form class="contact-form" action="contact-form.php" method="post">
-            <h1>Get in touch</h1>
-            <div class="input-container">
-                <label>Your name: </label>
-                <input type="text" class="cf-text" name="name" placeholder="" required>
-            </div>
-
-            <div class="input-container">
-                <label>Email: </label>
-                <input type="text" class="cf-text" name="email" placeholder="" required>
-            </div>
-
-            <div class="input-container">
-                <label>Phone number (optional): </label>
-                <input type="text" class="cf-text" name="phone" placeholder="">
-            </div>
-
-            <div class="input-container">
-                <label>Subject: </label>
-                <input type="text" class="cf-text" name="subject" placeholder="" required>
-            </div>
-
-            <div class="input-container">
-                <label>Message: </label>
-                <textarea class="cf-text" name="message" placeholder="" required></textarea>
-            </div>
-            <button class="cf-button" type="submit" name="submit">Send message</button>
-        </form>
+    <div id="">
+        What I am looking for:
     </div>
-    </main>
-    <script src="background.js"></script>
+
+    <form class="contact-form" action="contact-form.php" method="post">
+        <h1>Get in touch</h1>
+        <h2>I will reach back to you as soon as possible!</h2>
+        <div class="input-container">
+            <label>Your name: </label>
+            <input type="text" class="cf-text" name="name" placeholder="" required>
+        </div>
+
+        <div class="input-container">
+            <label>Email: </label>
+            <input type="text" class="cf-text" name="email" placeholder="" required>
+        </div>
+
+        <div class="input-container">
+            <label>Phone number (optional): </label>
+            <input type="text" class="cf-text" name="phone" placeholder="">
+        </div>
+
+        <div class="input-container">
+            <label>Subject: </label>
+            <input type="text" class="cf-text" name="subject" placeholder="" required>
+        </div>
+
+        <div class="input-container">
+            <label>Message: </label>
+            <textarea class="cf-text" name="message" placeholder="" required></textarea>
+        </div>
+        <br>
+        <br>
+        <br>
+        <button class="cf-button" type="submit" name="submit">Send message</button>
+    </form>
 </body>
 
 </html>

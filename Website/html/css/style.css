@@ -8,12 +8,14 @@
 
 :root{
   font-size: 20px;
-  font-family: 'Work Sans', sans-serif;
+  --primary-font: 'Work Sans', sans-serif;
+  font-family: var(--primary-font);
   --text-primary:white;
   --text-secondary:rgb(255, 255, 255);
+  --icon-color:rgb(255,0,0);
   --bg-primary:hsla(0, 0%, 13%, 0.192);
   --bg-secondary:rgba(255, 0, 0, 0);
-  --transition-speed: 800ms;
+  --transition-speed: 700ms;
   font-weight: 400;
 }
 

@@ -4,68 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-style.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/about-me-style.css">
     <title>Nils Meijer | About me</title>
 </head>
 
 <body>
-    <div class="about-me">
-        <canvas id="bgCanvas"></canvas>
-        <header>
-            <div class="logo-container">
-                <img src="logo.png">
+    <header>
+        <nav class="navbar">
+            <div class="arrow">
+                <img src="icons8-expand-arrow-128.png">
             </div>
-        </header>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa fa-home" style="font-size: 75px;"></i>
+                        <span class="link-text">Home</span>
+                    </a>
+                </li>
 
-        <div class="horizontal-line"></div>
-        
-        <nav class="menu">
-            <ul>
-                <li><a class="nav-link" href="index.html"> Home</a> </li>
-                <li><a class="nav-link" href="portfolio.html"> Portfolio</a> </li>
-                <li><a class="nav-link" href="about-me.html"> About</a> </li>
-                <li><a class="nav-link" href="contact-me.html"> Contact me</a> </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">
+                        <i class="fa fa-code" style="font-size: 75px;"></i>
+                        <span class="link-text">Portfolio</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about-me.html" class="nav-link">
+                        <i class="fa fa-address-card" style="font-size: 85px;"></i>
+                        <span class="link-text">About me</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact-me.html" class="nav-link">
+                        <i class="fa fa-envelope" style="font-size: 75px;"></i>
+                        <span class="link-text">Contact</span>
+                    </a>
+                </li>
             </ul>
         </nav>
+    </header>
 
-        <h1>About me</h1>
-        <p>
-            I am a Game Design / Development student at Saxion Hogeschool, currently based in Enschede, The Netherlands.
-            I love to make small games, together with friends/fellow students, or on my own.
-            I'm always on the lookout for something new to learn.
-            <br>
-            <br>
-            If you'd like to give feedback on any of my projects, including this website,
-            feel free to send me a message on any of my social media, or send me an email using the <a #id="cf-shortcut"
-                href="contact-me.html">contact form!</a>
-        </p>
-        <div class="photo">
-            <img src="Images/photo.jpg">
+    <div class="about-me-container">
+        <div class="description">
+            
         </div>
+    </div>
 
-        <div class="container">
-            <h1>Skill Set</h1>
-            <h3>Languages</h3>
-            <div class="bar languages css" data-skill="CSS"></div>
-            <div class="bar languages html" data-skill="HTML"></div>
-            <div class="bar languages csharp" data-skill="C#"></div>
-            <div class="bar languages cpp" data-skill="C++"></div>
-
-            <br>
-            <h3>Software</h3>
-            <div class="bar software unity" data-skill="Unity 3D"></div>
-            <div class="bar software git" data-skill="Git"></div>
-
-            <br>
-            <h3>Soft Skills</h3>
-            <div class="bar soft-skills teamworker" data-skill="Teamworker"></div>
-            <div class="bar soft-skills presenter" data-skill="Presenter"></div>
-            <div class="bar soft-skills creativity" data-skill="Creative"></div>
-        
-          </div>
-        </div>
-        <script src="background.js"></script>
 </body>
 
 </html>
