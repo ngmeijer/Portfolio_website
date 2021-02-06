@@ -8,6 +8,10 @@
   width:35vw;
 }
 
+.platform{
+  transition:all 0.3s ease-in-out;
+}
+
 .platform img{
   position:relative;
   margin:0;
@@ -19,6 +23,10 @@
   display:block;
   width:15%;
   height:100%;
+}
+
+.platform:hover{
+  transform:translateY(-3vh);
 }
 
 #invitation{
