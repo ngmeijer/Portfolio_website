@@ -31,40 +31,6 @@
   animation-duration: 2s;
 }
 
-@keyframes idle-arrow{
-  0%{
-    transform:translateX(0vw);
-  }
-
-  50%{
-    transform:translateX(2vw);
-  }
-
-  100%{
-    transform:translateX(0vw);
-  }
-}
-
-@keyframes on-hover-arrow{
-  0%{
-    transform:rotate(0deg);
-  }
-
-  100%{
-    transform:rotate(180deg);
-  }
-}
-
-@keyframes off-hover-arrow{
-  0%{
-    transform:rotate(180deg);
-  }
-
-  100%{
-    transform:rotate(0deg);
-  }
-}
-
 .nav-item{
   position: relative;
 }
@@ -85,10 +51,8 @@
 }
 
 .navbar:hover .arrow{
-  animation-name: on-hover-arrow;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  transition:all 0.5s ease;
+  transform:rotate(180deg);
 }
 
 .nav-link:hover{

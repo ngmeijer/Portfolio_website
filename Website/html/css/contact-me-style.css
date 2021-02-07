@@ -92,21 +92,24 @@
 
 .cf-button{
   position:relative;
+  right:3vw;
+  top:10vh;
   float:right;
-  padding-top: 3vh;
-  padding-bottom:3vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 10vh;
+  padding-bottom:10vh;
+  
   max-height: 9vh;
-  background:none;
-  color:white;
   font-size: 2rem;
-  vertical-align: middle;
-  text-align: center;
+  background: none;
   border:none;
-  transition:all var(--transition-speed) ease-in-out;
+  transition:all 0.3s ease-in-out;
   font-family: var(--primary-font);
   font-weight: bold;
 }
-
 
 .cf-button:hover{
   font-size: 2.5rem;
