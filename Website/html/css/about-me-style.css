@@ -2,18 +2,23 @@ body{
   overflow: none;
 }
 
+#photo{
+  position: absolute;
+  left:23.5vw;
+}
+
 .description-container{
   position: relative;
   width:40vw;
   height:100vh;
   float:right;
-  margin-right:1vw;
   background:var(--bg-primary);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .description-code{
   position:relative;
-  /* left:-10vw; */
   font-size: 1.4rem;
 }
 
@@ -36,7 +41,15 @@ body{
 }
 
 #contact-button{
+  position:relative;
+  left:5.5vw;
+  top:2vh;
+  font-size: 2rem;
   text-decoration: none;
+  padding-left:1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 #languages, #software{
@@ -78,16 +91,16 @@ body{
 .language > p, .program > p{
   font-size: 1.2rem;
   position:absolute;
-  display:flex;
+  display:none;
   justify-content: center;
   top:-5.5vh;
   width:8vw;
+  color:white;
   transition:all 0.3 ease;
 }
 
-.language:hover{
-  display:block;
-  background:red;
+.program:hover > p, .language:hover > p{
+  display:flex;
 }
 
 .percentage{

@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <canvas id="bgCanvas"></canvas>
+    <script src="../Javascript/background.js"></script>
     <header>
         <nav class="navbar">
             <div class="arrow">
@@ -51,7 +53,9 @@
 
     <div class="about-me-container">
         <div id="photo">
-            <img src="">
+            <a>
+                <img src="https://via.placeholder.com/700x350.png?text=Placeholder picture">
+            </a>
         </div>
 
         <div class="skills-container">
@@ -59,15 +63,19 @@
                 Languages I speak
                 <div id="language-container">
                     <div class="language">
+                        <p>C#</p>
                         <img src="../Logos/Languages/csharp.svg" height="100" width="100">
                     </div>
                     <div class="language">
+                        <p>C++</p>
                         <img src="../Logos/Languages/cpp.svg" height="100" width="100">
                     </div>
                     <div class="language">
+                        <p>JavaScript</p>
                         <img src="../Logos/Languages/javascript.svg" height="100" width="100">
                     </div>
                     <div class="language">
+                        <p>HTML & CSS</p>
                         <img src="../Logos/Languages/html.svg" height="100" width="100">
                         <img src="../Logos/Languages/css.svg" height="100" width="100">
                     </div>
@@ -118,13 +126,15 @@
                     Hi there, person on the other side! I hope my portfolio gives you a bit of an insight in who I am
                     and what I made.
                     <br><br>
-                    Don't hesitate to send me a <a id="contact-button" href="contact-me.html">message</a> if something
+                    Don't hesitate to send me a message</a> if something
                     sparked your interest!
                 </p>
+                <a id="contact-button" href="contact-me.html">
+                    Yes, you made me curious!
+                </a>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

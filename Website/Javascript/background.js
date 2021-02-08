@@ -5,7 +5,6 @@
     window.requestAnimationFrame = requestAnimationFrame;
 })();
 
-// Terrain stuff.
 var background = document.getElementById("bgCanvas"),
     bgCtx = background.getContext("2d"),
     width = window.outerWidth,
