@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/menu-style.css">
     <link rel="stylesheet" type="text/css" href="css/portfolio-style.css">
+    <script src="../Javascript/modalActivation.js"></script>
+
     <title>Nils Meijer | Portfolio</title>
 </head>
 
 <body>
     <canvas id="bgCanvas"></canvas>
-    <script src="../Javascript/background.js"></script>
     <header>
         <nav class="navbar">
             <div class="arrow">
@@ -51,10 +52,22 @@
         </nav>
     </header>
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("modal");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
     <!--Game Shop & Inventory-->
-    <div id="modal"></div>
+    <div id="modal">
+        This is my DIV element.
+    </div>
     <div class="portfolio-container">
-        <button class="modal-button" onclick="showModal()">Show modal</button>
+        <button id="modal-button" onclick="myFunction()"></button>
         <div class="portfolio-item">
             <div class="portfolio-item-blur-background">
                 <div class="portfolio-item-name">
@@ -66,6 +79,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../Javascript/modalActivation.js"></script>
 
     <!--Nether Fights-->
     <div class="portfolio-container">
@@ -95,6 +110,5 @@
         </div>
     </div>
 </body>
-<script src="../Javascript/modalActivation.js"></script>
 
 </html>

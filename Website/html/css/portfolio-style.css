@@ -19,22 +19,41 @@ body{
   margin-bottom:0.1vh;
 }
 
+#modal-button{
+  z-index: 100;
+  width:10vw;
+  position:absolute;
+  left:40vw;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
 #modal{
   position:absolute;
-  display:none;
   width:80vw;
   height:80vh;
   top:10vh;
   left:10vw;
-  z-index: 100;
+  z-index: 1000;
   background:red;
 }
 
-.modal-button{
+#modal-button{
   position:absolute;
-  background:blue;
+  left:0vw;
   width:100vw;
   height:100%;
+  background:none;
+  border:none;
+}
+
+#modal-button:active{
   border:none;
 }
 
