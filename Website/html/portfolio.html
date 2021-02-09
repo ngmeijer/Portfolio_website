@@ -52,22 +52,12 @@
         </nav>
     </header>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("modal");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
     <!--Game Shop & Inventory-->
-    <div id="modal">
-        This is my DIV element.
+    <div class="modal">
+        <img src="Images/GameShopScreenshot.png">
     </div>
     <div class="portfolio-container">
-        <button id="modal-button" onclick="myFunction()"></button>
+        <button id="modal-button" onclick="showModal()"></button>
         <div class="portfolio-item">
             <div class="portfolio-item-blur-background">
                 <div class="portfolio-item-name">
@@ -83,7 +73,11 @@
     <script src="../Javascript/modalActivation.js"></script>
 
     <!--Nether Fights-->
+    <div class="modal">
+        <img src="Images/NetherFights.png">
+    </div>
     <div class="portfolio-container">
+        <button id="modal-button" onclick="showModal()"></button>
         <div class="portfolio-item">
             <div class="portfolio-item-blur-background">
                 <div class="portfolio-item-name">
@@ -97,7 +91,11 @@
     </div>
 
     <!--The Last Light-->
+    <div class="modal">
+        <img src="Images/thelastlight.jpg">
+    </div>
     <div class="portfolio-container">
+        <button id="modal-button" onclick="showModal()"></button>
         <div class="portfolio-item">
             <div class="portfolio-item-blur-background">
                 <div class="portfolio-item-name">

@@ -1,13 +1,23 @@
-window.onload = showModal;
+window.onload = showModal();
 
 function showModal() {
-    var modalInstance = document.getElementById("modal");
-
-    if (modalInstance.style.display == "none") {
-        console.log("setting display to block");
-        modalInstance.style.display = "block";
+    var x = document.getElementsByClassName("modal");
+    console.log(x.length);
+    if (x[2].style.display === "none") {
+        x[2].style.display = "block";
     } else {
-        modalInstance.style.display = "none";
-        console.log("setting display to none");
+        x[2].style.display = "none";
     }
+}
+
+function disableModals(){
+
+}
+
+function clicked(event){
+    alert(this.id);
+}
+
+function associateClassesAndClickHandler(){
+    
 }
