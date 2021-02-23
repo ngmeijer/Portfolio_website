@@ -47,18 +47,22 @@ body{
 .modal{
   position:absolute;
   display:none;
-  width:95vw;
-  height:95vh;
-  top:2.5vh;
-  left:2.5vw;
+  transition:opacity 1s ease-in;
+  width:100vw;
+  height:100vh;
+  top:0vh;
+  left:0vw;
   z-index: 2000;
-  background:rgb(32, 32, 32);
+  background:rgba(17, 17, 17, 0.801);
 }
 
 .modal-background{
   position:absolute;
-  width:100%;
-  height:100%;
+  top:5%;
+  left:5%;
+  width:90%;
+  height:90%;
+  background:rgb(32, 32, 32);
 }
 
 .modal img{
@@ -67,6 +71,17 @@ body{
   position:absolute;
   top:8vh;
   right:2vw;
+}
+
+.git-repo{
+  display:block;
+  position:relative;
+  top:60%;
+  left:43%;
+}
+
+.git-repo img{
+  fill:blue;
 }
 
 .modal h1{

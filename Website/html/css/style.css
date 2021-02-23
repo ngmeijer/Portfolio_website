@@ -12,7 +12,7 @@
   font-family: var(--primary-font);
   --text-primary:white;
   --text-secondary:rgb(255, 255, 255);
-  --icon-color:rgb(255,0,0);
+  --icon-color:rgb(201, 201, 201);
   --bg-primary:hsla(0, 0%, 13%, 0.192);
   --bg-secondary:rgba(255, 0, 0, 0);
   --transition-speed: 700ms;
