@@ -76,7 +76,7 @@ body{
 .git-repo{
   display:block;
   position:relative;
-  top:60%;
+  top:40%;
   left:43%;
 }
 
@@ -85,17 +85,41 @@ body{
 }
 
 .modal h1{
-  position:absolute;
-  left:2vw;
-  top:2vh;
+  position:relative;
+  width:40%;
+  left:2.5%;
+  top:2%;
   font-size: 3rem;
+}
+
+.modal h2{
+  position:relative;
+  width:40%;
+  left:3%;
+  top:0%;
 }
 
 .modal p{
   position:relative;
   width:45%;
-  top:14%;
-  left:2vw;
+  top:0%;
+  left:3%;
+  font-size: 1.1rem;
+}
+
+.modal pre{
+  position:relative;
+  left:3%;
+  top:2%;
+  width:40%;
+  padding:0;
+}
+
+.modal ul{
+  position:relative;
+  width:40%;
+  left:3%;
+  top:2%;
   font-size: 1.1rem;
 }
 

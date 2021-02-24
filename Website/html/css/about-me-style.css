@@ -88,10 +88,6 @@ body{
   margin-bottom: 1vh;
 }
 
-.language:nth-child(3) img{
-  margin-top:-1vh;
-}
-
 .program:nth-child(2) img{
   margin-top:-2vh;
 }
