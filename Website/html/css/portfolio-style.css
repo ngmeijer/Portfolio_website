@@ -156,6 +156,15 @@ body{
   margin-right:1vw;
 }
 
+.portfolio-item h2{
+  position:absolute;
+  left:67%;
+  text-align: right;
+  width:30%;
+  top:70%;
+  margin:0;
+}
+
 .portfolio-item-image img{
   position:absolute;
   left:45vw;

@@ -1,61 +1,96 @@
-.index-container{
+.index-container {
   position: absolute;
 }
 
-.logo{
-  position:absolute;
+.logo {
+  position: absolute;
   left: 3vw;
   top: 5vh;
-  width:100%;
+  width: 100%;
 }
 
-.blurred-background{
-  width:45vw;
-  height:100vh;
+.blurred-background {
+  width: 45vw;
+  height: 100vh;
   background: var(--bg-primary);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
 
-.introduction{
-  display:flex;
+.introduction {
+  display: flex;
   position: absolute;
-  top:20vh;
+  top: 20vh;
 }
 
-#first-name{
-  position:fixed;
-  right:55vw;
+#first-name {
+  position: fixed;
+  right: 55vw;
   font-size: 8rem;
 }
 
-#sur-name{
-  position:fixed;
-  left:45vw;
+#sur-name {
+  position: fixed;
+  left: 45vw;
   font-size: 8rem;
   font-weight: bold;
   margin-right: 0.5vw;
 }
 
-#professions{
-  position:fixed;
+#professions {
+  position: fixed;
   text-align: right;
-  top:60vh;
-  right:55vw;
+  top: 60vh;
+  right: 55vw;
   font-size: 1.5rem;
-  margin-right:0.5vw;
+  margin-right: 0.5vw;
 }
 
-#contact-button{
-  position:absolute;
-  top:80vh;
-  left:35vw;
+#contact-button {
+  position: absolute;
+  top: 80vh;
+  left: 35vw;
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
-  transition:all var(--transition-speed) ease-in-out;
+  transition: all var(--transition-speed) ease-in-out;
 }
 
-#contact-button:hover{
-  left:30vw;
+#contact-button:hover {
+  left: 30vw;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .introduction {
+    top:30vh;
+  }
+
+  #first-name {
+    font-size: 3.5rem;
+  }
+
+  #sur-name {
+    font-size: 3.5rem;
+  }
+
+  #professions {
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
