@@ -1,172 +1,249 @@
-body{
+body {
   overflow-y: scroll;
 }
 
-.title{
+.title {
   display: flex;
   justify-content: center;
   font-size: 5rem;
-  width:50vw;
+  width: 50vw;
 }
 
-.portfolio-container{
-  margin:0;
+.content-container {
+  position: absolute;
+  display: block;
+  height: 100vh;
   width:100vw;
-  height:30vh;
-  position:relative;
+}
+
+.portfolio-container {
+  margin: 0;
+  width: 100vw;
+  height: 30vh;
+  position: relative;
   overflow: hidden;
   transition: height 0.35s ease;
-  margin-bottom:0.1vh;
+  margin-bottom: 0.1vh;
 }
 
-.modal-button{
+.modal-button {
   z-index: 100;
-  position:absolute;
+  position: absolute;
 
-  left:0vw;
-  width:100vw;
-  height:100%;
-  background:none;
-  border:none;
+  left: 0vw;
+  width: 100vw;
+  height: 100%;
+  background: none;
+  border: none;
   margin: auto;
 }
 
-.modal-close{
+.modal-close {
   z-index: 100;
-  position:absolute;
-  top:0vh;
-  right:0vw;
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
   font-size: 3rem;
-  float:right;
-  border:none;
-  height:6%;
+  float: right;
+  border: none;
+  height: 6%;
   text-align: center;
-  background:none;
+  background: none;
 }
 
-.modal{
-  position:absolute;
-  display:none;
-  transition:opacity 1s ease-in;
-  width:100vw;
-  height:100vh;
-  top:0vh;
-  left:0vw;
+.modal {
+  position: absolute;
+  display: none;
+  transition: opacity 1s ease-in;
+  width: 100vw;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
   z-index: 2000;
-  background:rgba(17, 17, 17, 0.801);
+  background: rgba(17, 17, 17, 0.801);
 }
 
-.modal-background{
-  position:absolute;
-  top:5%;
-  left:5%;
-  width:90%;
-  height:90%;
-  background:rgb(32, 32, 32);
+.modal-background {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgb(32, 32, 32);
 }
 
-.modal img{
-  width:50%;
-  float:right;
-  position:absolute;
-  top:8vh;
-  right:2vw;
+.modal img {
+  width: 50%;
+  float: right;
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
 }
 
-.git-repo{
-  display:block;
-  position:relative;
-  top:40%;
-  left:43%;
+.git-repo {
+  display: block;
+  position: relative;
+  top: 40%;
+  left: 43%;
 }
 
-.git-repo img{
-  fill:blue;
+.git-repo img {
+  fill: blue;
 }
 
-.modal h1{
-  position:relative;
-  width:40%;
-  left:2.5%;
-  top:2%;
+.modal h1 {
+  position: relative;
+  width: 40%;
+  left: 2.5%;
+  top: 2%;
   font-size: 3rem;
 }
 
-.modal h2{
-  position:relative;
-  width:40%;
-  left:3%;
-  top:0%;
+.modal h2 {
+  position: relative;
+  width: 40%;
+  left: 3%;
+  top: 0%;
 }
 
-.modal p{
-  position:relative;
-  width:45%;
-  top:0%;
-  left:3%;
+.modal p {
+  position: relative;
+  width: 45%;
+  top: 0%;
+  left: 3%;
   font-size: 1.1rem;
 }
 
-.modal pre{
-  position:relative;
-  left:3%;
-  top:2%;
-  width:40%;
-  padding:0;
+.modal pre {
+  position: relative;
+  left: 3%;
+  top: 2%;
+  width: 40%;
+  padding: 0;
 }
 
-.modal ul{
-  position:relative;
-  width:40%;
-  left:3%;
-  top:2%;
+.modal ul {
+  position: relative;
+  width: 40%;
+  left: 3%;
+  top: 2%;
   font-size: 1.1rem;
 }
 
-.modal-button:active{
-  border:none;
+.modal-button:active {
+  border: none;
 }
 
-.portfolio-container:hover{
-  height:50vh;
+.portfolio-container:hover {
+  height: 50vh;
 }
 
 .portfolio-container:hover .portfolio-item-name {
   font-size: 3.5rem;
 }
 
-.portfolio-item-blur-background{
-  position:absolute;
-  width:45vw;
-  height:100%;
+.portfolio-item-blur-background {
+  position: absolute;
+  width: 45vw;
+  height: 100%;
   background: var(--bg-primary);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   opacity: 0.6;
 }
 
-.portfolio-item-name{
-  display:flex;
-  position:relative;
-  height:100%;
+.portfolio-item-name {
+  display: flex;
+  position: relative;
+  height: 100%;
   align-items: center;
   font-size: 2.5rem;
   transition: font-size 1s ease;
-  float:right;
-  margin-right:1vw;
+  float: right;
+  margin-right: 1vw;
 }
 
-.portfolio-item h2{
-  position:absolute;
-  left:67%;
+.portfolio-item h2 {
+  position: absolute;
+  left: 67%;
   text-align: right;
-  width:30%;
-  top:70%;
-  margin:0;
+  width: 30%;
+  top: 70%;
+  margin: 0;
 }
 
-.portfolio-item-image img{
-  position:absolute;
-  left:45vw;
-  width:55%;
+.portfolio-item-image img {
+  position: absolute;
+  left: 45vw;
+  width: 55%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .content-container{
+    
+  }
+  .portfolio-container {
+    width: 98.5%;
+    height: 40%;
+  }
+
+  .portfolio-item {
+    height: 100%;
+    width: 100%;
+  }
+
+  .portfolio-item-name {
+    width:100%;
+    height:70%;
+    margin:0;
+    padding:0;
+    position: relative;
+    top: 0vh;
+    font-size: 1.6rem;
+    display:flex;
+    justify-content: center;
+  }
+
+  .portfolio-item h2 {
+    width:100%;
+    height:30%;
+    font-size: 0.9rem;
+    left:0vw;
+    text-align: center;
+  }
+
+  .portfolio-item-image {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: -45vw;
+  }
+
+  .portfolio-item-image img {
+    position: absolute;
+    top: 0vh;
+    width: 100vw;
+  }
+
+  .portfolio-item-blur-background {
+    width: 100%;
+    height:35%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

@@ -10,7 +10,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/menu-style.css" />
     <link rel="stylesheet" type="text/css" href="css/portfolio-style.css" />
+    <link rel="icon" href="logo.png">
     <script src="../Javascript/modalActivation.js"></script>
+    <script src="../Javascript/menuActivation.js"></script>
 
     <title>Nils Meijer | Portfolio</title>
   </head>
@@ -53,137 +55,174 @@
           </li>
         </ul>
       </nav>
+
+      <nav class="navbar-mobile">
+        <button class="hamburger" onclick="showMenu()">
+          <img src="hamburger.png" />
+        </button>
+        <ul class="navbar-nav-mobile">
+          <li class="nav-item-mobile">
+            <a href="index.html" class="nav-link-mobile">
+              <i class="fa fa-home" style="font-size: 75px"></i>
+              <span class="link-text-mobile">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a href="portfolio.html" class="nav-link-mobile">
+              <i class="fa fa-code" style="font-size: 75px"></i>
+              <span class="link-text-mobile">Portfolio</span>
+            </a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a href="about-me.html" class="nav-link-mobile">
+              <i class="fa fa-address-card" style="font-size: 75px"></i>
+              <span class="link-text-mobile">About me</span>
+            </a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a href="contact-me.html" class="nav-link-mobile">
+              <i class="fa fa-envelope" style="font-size: 75px"></i>
+              <span class="link-text-mobile">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <!--The Day We Escaped-->
-    <div class="modal">
-      <div class="modal-background">
-        <h1>The Day We Escaped</h1>
-        <p>
-          The 3rd project in my 2nd year, and the first one where we were free
-          to make what we wanted, in every possible creative way.
-        </p>
+    <div class="content-container">
+      <!--The Day We Escaped-->
+      <div class="modal">
+        <div class="modal-background">
+          <h1>The Day We Escaped</h1>
+          <p>
+            The 3rd project in my 2nd year, and the first one where we were free
+            to make what we wanted, in every possible creative way.
+          </p>
 
-        <pre>
+          <pre>
     “A first person co-op puzzle game where the player 
     needs to escape from a Soviet lab together with another player. 
     Do your best to solve the puzzles, evade the enemies and 
     get out together. You will really need to rely on 
     each other to find a way out, but will everything be
     as it seems?”
-        </pre>
+        </pre
+          >
 
-        <h2>Technical aspects</h2>
-        <ul>
-          <li>Unity Photon multiplayer</li>
-          <li>NavMesh AI</li>
-          <li>AI Field of View</li>
-        </ul>
+          <h2>Technical aspects</h2>
+          <ul>
+            <li>Unity Photon multiplayer</li>
+            <li>NavMesh AI</li>
+            <li>AI Field of View</li>
+          </ul>
 
-        <img src="Images/TDWE.png" />
-        <button class="modal-close" onclick="closeModal(0)">&times</button>
-      </div>
-    </div>
-    <div class="portfolio-container">
-      <button class="modal-button" onclick="showModal(0)"></button>
-      <div class="portfolio-item">
-        <div class="portfolio-item-blur-background">
-          <div class="portfolio-item-name">The Day We Escaped</div>
-          <h2>Unity HDRP, C#</h2>
-        </div>
-        <div class="portfolio-item-image">
           <img src="Images/TDWE.png" />
+          <button class="modal-close" onclick="closeModal(0)">&times</button>
         </div>
       </div>
-    </div>
-
-    <!--Game Shop & Inventory-->
-    <div class="modal">
-      <div class="modal-background">
-        <h1>Game Shop & Inventory</h1>
-        <p>
-          The end-assignment of the Software Architecture course. 
-          The goal was to learn how to write a clean & maintainable codebase, written in C#.
-        </p>
-
-        <h2>Technical aspects</h2>
-        <ul>
-          <li>Abstract Factory pattern</li>
-          <li>Observer pattern</li>
-          <li>Singleton pattern</li>
-        </ul>
-
-        <img src="Images/GameShopScreenshot.png" />
-        <button class="modal-close" onclick="closeModal(1)">&times</button>
-      </div>
-    </div>
-    <div class="portfolio-container">
-      <button class="modal-button" onclick="showModal(1)"></button>
-      <div class="portfolio-item">
-        <div class="portfolio-item-blur-background">
-          <div class="portfolio-item-name">Game Shop & Inventory</div>
-          <h2>Unity, C#</h2>
+      <div class="portfolio-container">
+        <button class="modal-button" onclick="showModal(0)"></button>
+        <div class="portfolio-item">
+          <div class="portfolio-item-blur-background">
+            <div class="portfolio-item-name">The Day We Escaped</div>
+            <h2>Unity HDRP, C#</h2>
+          </div>
+          <div class="portfolio-item-image">
+            <img src="Images/TDWE.png" />
+          </div>
         </div>
-        <div class="portfolio-item-image">
+      </div>
+
+      <div class="modal">
+        <div class="modal-background">
+          <h1>Game Shop & Inventory</h1>
+          <p>
+            The end-assignment of the Software Architecture course. The goal was
+            to learn how to write a clean & maintainable codebase, written in
+            C#.
+          </p>
+
+          <h2>Technical aspects</h2>
+          <ul>
+            <li>Abstract Factory pattern</li>
+            <li>Observer pattern</li>
+            <li>Singleton pattern</li>
+          </ul>
+
           <img src="Images/GameShopScreenshot.png" />
+          <button class="modal-close" onclick="closeModal(1)">&times</button>
         </div>
       </div>
-    </div>
-
-    <!--Nether Fights-->
-    <div class="modal">
-      <div class="modal-background">
-        <h1>Nether Fights</h1>
-        <p>
-          This game was the end result of one of my 2nd year courses, C++
-          Programming. It was my first introduction to C++, so it was quite the
-          task to make a working 2D fighter game (the given theme). Because I
-          wanted it to be a presentable portfolio piece, I decided, when
-          starting with the assignment, to give the theme a twist.
-        </p>
-
-        <p>
-          At the time, I was playing the new DOOM Eternal, hence the DOOM theme.
-        </p>
-        <img src="Images/NetherFights.png" />
-        <button class="modal-close" onclick="closeModal(2)">&times</button>
-      </div>
-    </div>
-    <div class="portfolio-container">
-      <button class="modal-button" onclick="showModal(2)"></button>
-      <div class="portfolio-item">
-        <div class="portfolio-item-blur-background">
-          <div class="portfolio-item-name">Nether Fights</div>
-          <h2>SFML, C++</h2>
+      <div class="portfolio-container">
+        <button class="modal-button" onclick="showModal(1)"></button>
+        <div class="portfolio-item">
+          <div class="portfolio-item-blur-background">
+            <div class="portfolio-item-name">Game Shop & Inventory</div>
+            <h2>Unity, C#</h2>
+          </div>
+          <div class="portfolio-item-image">
+            <img src="Images/GameShopScreenshot.png" />
+          </div>
         </div>
-        <div class="portfolio-item-image">
+      </div>
+
+      <div class="modal">
+        <div class="modal-background">
+          <h1>Nether Fights</h1>
+          <p>
+            This game was the end result of one of my 2nd year courses, C++
+            Programming. It was my first introduction to C++, so it was quite
+            the task to make a working 2D fighter game (the given theme).
+            Because I wanted it to be a presentable portfolio piece, I decided,
+            when starting with the assignment, to give the theme a twist.
+          </p>
+
+          <p>
+            At the time, I was playing the new DOOM Eternal, hence the DOOM
+            theme.
+          </p>
           <img src="Images/NetherFights.png" />
+          <button class="modal-close" onclick="closeModal(2)">&times</button>
         </div>
       </div>
-    </div>
+      <div class="portfolio-container">
+        <button class="modal-button" onclick="showModal(2)"></button>
+        <div class="portfolio-item">
+          <div class="portfolio-item-blur-background">
+            <div class="portfolio-item-name">Nether Fights</div>
+            <h2>SFML, C++</h2>
+          </div>
+          <div class="portfolio-item-image">
+            <img src="Images/NetherFights.png" />
+          </div>
+        </div>
+      </div>
 
-    <!--The Last Light-->
-    <div class="modal">
-      <div class="modal-background">
-        <h1>The Last Light</h1>
-        <p>Write some text here</p>
-        <img src="Images/thelastlight.jpg" />
-        <div class="git-repo">
-          <img src="../Logos/Social Media/git.svg" height="100" />
-          <a href="https://github.com/ngmeijer" target="_blank"></a>
-        </div>
-        <button class="modal-close" onclick="closeModal(3)">&times</button>
-      </div>
-    </div>
-    <div class="portfolio-container">
-      <button class="modal-button" onclick="showModal(3)"></button>
-      <div class="portfolio-item">
-        <div class="portfolio-item-blur-background">
-          <div class="portfolio-item-name">The Last Light</div>
-          <h2>Unity, C#</h2>
-        </div>
-        <div class="portfolio-item-image">
+      <div class="modal">
+        <div class="modal-background">
+          <h1>The Last Light</h1>
+          <p>Write some text here</p>
           <img src="Images/thelastlight.jpg" />
+          <div class="git-repo">
+            <img src="../Logos/Social Media/git.svg" height="100" />
+            <a href="https://github.com/ngmeijer" target="_blank"></a>
+          </div>
+          <button class="modal-close" onclick="closeModal(3)">&times</button>
+        </div>
+      </div>
+      <div class="portfolio-container">
+        <button class="modal-button" onclick="showModal(3)"></button>
+        <div class="portfolio-item">
+          <div class="portfolio-item-blur-background">
+            <div class="portfolio-item-name">The Last Light</div>
+            <h2>Unity, C#</h2>
+          </div>
+          <div class="portfolio-item-image">
+            <img src="Images/thelastlight.jpg" />
+          </div>
         </div>
       </div>
     </div>

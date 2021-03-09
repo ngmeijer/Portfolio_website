@@ -1,123 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/contact-me-style.css">
-    <link rel="stylesheet" type="text/css" href="css/menu-style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact-me-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu-style.css" />
+    <link rel="icon" href="logo.png" />
     <script href="contact-form.php"></script>
+    <script src="../Javascript/menuActivation.js"></script>
     <title>Nils Meijer | Contact me</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <canvas id="bgCanvas"></canvas>
     <script src="../Javascript/background.js"></script>
     <header>
-        <nav class="navbar">
-            <div class="arrow">
-                <img src="icons8-expand-arrow-128.png">
-            </div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        <i class="fa fa-home" style="font-size: 75px;"></i>
-                        <span class="link-text">Home</span>
-                    </a>
-                </li>
+      <nav class="navbar">
+        <div class="arrow">
+          <img src="icons8-expand-arrow-128.png" />
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="fa fa-home" style="font-size: 75px"></i>
+              <span class="link-text">Home</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link">
-                        <i class="fa fa-code" style="font-size: 75px;"></i>
-                        <span class="link-text">Portfolio</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">
+              <i class="fa fa-code" style="font-size: 75px"></i>
+              <span class="link-text">Portfolio</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="about-me.html" class="nav-link">
-                        <i class="fa fa-address-card" style="font-size: 85px;"></i>
-                        <span class="link-text">About me</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a href="about-me.html" class="nav-link">
+              <i class="fa fa-address-card" style="font-size: 85px"></i>
+              <span class="link-text">About me</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="contact-me.html" class="nav-link">
-                        <i class="fa fa-envelope" style="font-size: 75px;"></i>
-                        <span class="link-text">Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+          <li class="nav-item">
+            <a href="contact-me.html" class="nav-link">
+              <i class="fa fa-envelope" style="font-size: 75px"></i>
+              <span class="link-text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navbar-mobile">
+        <button class="hamburger" onclick="showMenu()">
+          <img src="hamburger.png" />
+        </button>
+        <ul class="navbar-nav-mobile">
+          <li class="nav-item-mobile">
+            <a href="index.html" class="nav-link-mobile">
+              <i class="fa fa-home" style="font-size: 75px"></i>
+              <span class="link-text-mobile">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a href="portfolio.html" class="nav-link-mobile">
+              <i class="fa fa-code" style="font-size: 75px"></i>
+              <span class="link-text-mobile">Portfolio</span>
+            </a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a href="about-me.html" class="nav-link-mobile">
+              <i class="fa fa-address-card" style="font-size: 75px"></i>
+              <span class="link-text-mobile">About me</span>
+            </a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a href="contact-me.html" class="nav-link-mobile">
+              <i class="fa fa-envelope" style="font-size: 75px"></i>
+              <span class="link-text-mobile">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <div id="social-media">
+    <div class="content-container">
+      <div id="social-media">
         <div class="platform">
-            <img src="../Logos/Social Media/twitter.svg" height="100" width="100" color="white">
-            <a href="https://twitter.com/NilsGMeijer" target="_blank"></a>
+          <img
+            src="../Logos/Social Media/twitter.svg"
+            height="100"
+            width="100"
+            color="white"
+          />
+          <a href="https://twitter.com/NilsGMeijer" target="_blank"></a>
         </div>
         <div class="platform">
-            <img src="../Logos/Social Media/discord.svg" height=100>
-            <a target="_blank"></a>
-        </div>
-
-        <div class="platform">
-            <img src="../Logos/Social Media/playstore.png" height=100>
-            <a href="https://play.google.com/store/apps/developer?id=Meijer+Games" target="_blank"></a>
-        </div>
-
-        <div class="platform">
-            <img src="../Logos/Social Media/linkedin.svg" height=100>
-            <a href="https://www.linkedin.com/in/nilsmeijer1/" target="_blank"></a>
+          <img src="../Logos/Social Media/discord.svg" height="100" />
+          <a target="_blank"></a>
         </div>
 
         <div class="platform">
-            <img src="../Logos/Social Media/git.svg" height=100>
-            <a href="https://github.com/ngmeijer" target="_blank"></a>
+          <img src="../Logos/Social Media/playstore.png" height="100" />
+          <a
+            href="https://play.google.com/store/apps/developer?id=Meijer+Games"
+            target="_blank"
+          ></a>
         </div>
-    </div>
 
-    <div id="invitation">
+        <div class="platform">
+          <img src="../Logos/Social Media/linkedin.svg" height="100" />
+          <a
+            href="https://www.linkedin.com/in/nilsmeijer1/"
+            target="_blank"
+          ></a>
+        </div>
+
+        <div class="platform">
+          <img src="../Logos/Social Media/git.svg" height="100" />
+          <a href="https://github.com/ngmeijer" target="_blank"></a>
+        </div>
+      </div>
+
+      <div id="invitation">
         <div id="background">
-            Always up for a chat, coffee's on me!
-            <br> If you think I am a great fit for your team,
-            <br> I am currently on the lookout for internship opportunities in the Game Programming field.
-            <br> Hit me up!
+          Always up for a chat, coffee's on me!
+          <br />
+          If you think I am a great fit for your team, <br />
+          I am currently on the lookout for internship opportunities in the Game
+          Programming field. <br />
+          Hit me up!
         </div>
-    </div>
+      </div>
 
-    <form class="contact-form" action="contact-form.php" method="post">
+      <form class="contact-form" action="contact-form.php" method="post">
         <div class="cf-background"></div>
         <h1>Get in touch</h1>
         <h2>I will reach back to you as soon as possible!</h2>
         <div class="input-container">
-            <label>Your name: </label>
-            <input type="text" class="cf-text" name="name" placeholder="" required>
+          <label>Your name: </label>
+          <input
+            type="text"
+            class="cf-text"
+            name="name"
+            placeholder=""
+            required
+          />
         </div>
 
         <div class="input-container">
-            <label>Email: </label>
-            <input type="text" class="cf-text" name="email" placeholder="" required>
+          <label>Email: </label>
+          <input
+            type="text"
+            class="cf-text"
+            name="email"
+            placeholder=""
+            required
+          />
         </div>
 
         <div class="input-container">
-            <label>Phone number (optional): </label>
-            <input type="text" class="cf-text" name="phone" placeholder="">
+          <label>Phone number (optional): </label>
+          <input type="text" class="cf-text" name="phone" placeholder="" />
         </div>
 
         <div class="input-container">
-            <label>Subject: </label>
-            <input type="text" class="cf-text" name="subject" placeholder="" required>
+          <label>Subject: </label>
+          <input
+            type="text"
+            class="cf-text"
+            name="subject"
+            placeholder=""
+            required
+          />
         </div>
 
         <div class="input-container">
-            <label>Message: </label>
-            <textarea class="cf-text" name="message" placeholder="" required></textarea>
+          <label>Message: </label>
+          <textarea
+            class="cf-text"
+            name="message"
+            placeholder=""
+            required
+          ></textarea>
         </div>
 
-        <button class="cf-button" type="submit" name="submit">Send message</button>
-    </form>
-</body>
-
+        <button class="cf-button" type="submit" name="submit">
+          Send message
+        </button>
+      </form>
+    </div>
+  </body>
 </html>
